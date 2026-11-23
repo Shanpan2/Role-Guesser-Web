@@ -1,0 +1,16 @@
+/* Detail-dialog readability overrides. */
+dialog {
+  width: min(720px, calc(100% - 32px));
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+}
+
+.role-description { margin: 28px 0; }
+.role-description p { margin: 0 0 14px; line-height: 1.85; }
+.role-description ul { margin: 16px 0 0; padding-left: 1.35em; }
+.role-description li { margin: 10px 0; line-height: 1.75; }
+
+@media (max-width: 680px) {
+  dialog { padding: 24px 20px; }
+  .role-description { margin: 22px 0; }
+}
