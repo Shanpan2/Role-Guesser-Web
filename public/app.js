@@ -1,5 +1,5 @@
 const $ = (selector) => document.querySelector(selector);
-const state = { roles: [], registry: {}, filtered: [], candidates: [], history: [], scope: 'Vanilla' };
+const state = { roles: [], registry: {}, filtered: [], candidates: [], history: [], asked: [], scope: 'Vanilla' };
 
 function parseCsv(text) {
   const rows = []; let row = [], value = '', quoted = false;
@@ -82,13 +82,59 @@ function openRole(key) {
 function setupQuiz() {
   const scopes = ['Vanilla', ...Object.keys(state.registry).filter(mod => state.roles.some(r=>r.mod===mod)), ...[...new Set(state.roles.map(r=>r.mod))].filter(mod=>mod !== 'Vanilla' && !state.registry[mod])];
   $('#quiz-scope').innerHTML = scopes.map(mod => `<option value="${mod}">${mod === 'Vanilla' ? 'Vanilla（公式確認済み）' : (state.registry[mod]?.label || mod)}</option>`).join('');
-  $('#start-quiz').onclick = () => { state.scope = $('#quiz-scope').value; state.candidates = state.roles.filter(role => role.mod === state.scope); state.history = []; $('#guess-setup').hidden = true; $('#quiz').hidden = false; renderQuiz(); };
+  $('#start-quiz').onclick = () => { state.scope = $('#quiz-scope').value; state.candidates = state.roles.filter(role => role.mod === state.scope); state.history = []; state.asked = []; $('#guess-setup').hidden = true; $('#quiz').hidden = false; renderQuiz(); };
   document.querySelectorAll('[data-answer]').forEach(button => button.onclick = () => answer(button.dataset.answer)); $('#undo').onclick=undo; $('#restart').onclick=()=>{ $('#guess-setup').hidden=false; $('#quiz').hidden=true; };
 }
-function nextQuestion() { return questions.map(([key,label]) => { const known = state.candidates.map(role=>signals(role)[key]).filter(value=>value !== null); const yes = known.filter(Boolean).length, no=known.filter(value=>!value).length; return {key,label,score:Math.min(yes,no)}; }).sort((a,b)=>b.score-a.score)[0]; }
-function renderQuiz() { const question = nextQuestion(); const names = state.candidates.slice(0,20).map(role => `<span class="candidate">${role.displayName}</span>`).join(''); $('#quiz-progress').textContent = `候補 ${state.candidates.length}件 · ${state.scope}`; $('#question').textContent = state.candidates.length <= 1 ? (state.candidates[0] ? `答え：${state.candidates[0].displayName}` : '候補がありません。1問戻ってください。') : question.score ? question.label : 'これ以上、確実に分けられる質問がありません。候補を確認してください。'; document.querySelectorAll('[data-answer]').forEach(button=>button.disabled = state.candidates.length <= 1 || !question.score); $('#candidates').innerHTML = names + (state.candidates.length > 20 ? `<span class="candidate">ほか ${state.candidates.length-20}件</span>` : ''); }
-function answer(answerValue) { const question = nextQuestion(); state.history.push([...state.candidates]); if (answerValue !== 'unknown') state.candidates = state.candidates.filter(role => { const value = signals(role)[question.key]; return answerValue === 'yes' ? value === true : value !== true; }); renderQuiz(); }
-function undo() { if (state.history.length) state.candidates = state.history.pop(); renderQuiz(); }
+function scoreQuestion(question) {
+  const answers = state.candidates.map(question.test);
+  const yes = answers.filter(Boolean).length, no = answers.filter(value => !value).length;
+  return {...question, score: Math.min(yes, no)};
+}
+function nameQuestions() {
+  const tokens = new Set();
+  state.candidates.forEach(role => {
+    const name = role.displayName.replace(/\s/g, '');
+    for (let size = 1; size <= Math.min(3, name.length); size++) for (let index = 0; index <= name.length - size; index++) tokens.add(name.slice(index, index + size));
+  });
+  return [...tokens].filter(token => token.length >= 2).map(token => ({
+    id: `name:${token}`, label: `役職名に「${token}」を含みますか？`, priority: 1,
+    test: role => role.displayName.includes(token)
+  }));
+}
+function nextQuestion() {
+  const abilityQuestions = questions.map(([key, label]) => ({
+    id: `ability:${key}`, label, priority: 3, test: role => signals(role)[key] === true
+  }));
+  const teamQuestions = [...new Set(state.candidates.map(role => role.team))].map(team => ({
+    id: `team:${team}`, label: `この役職は${teamJa(team)}陣営ですか？`, priority: 2, test: role => role.team === team
+  }));
+  const available = [...abilityQuestions, ...teamQuestions, ...nameQuestions()]
+    .filter(question => !state.asked.includes(question.id))
+    .map(scoreQuestion)
+    .filter(question => question.score > 0);
+  if (available.length) return available.sort((a, b) => b.score - a.score || b.priority - a.priority)[0];
+  const fallback = state.candidates.find(role => !state.asked.includes(`exact:${role.mod}:${role.name}`));
+  return fallback ? {
+    id: `exact:${fallback.mod}:${fallback.name}`,
+    label: `役職名は「${fallback.displayName}」ですか？`, priority: 0,
+    test: role => role.mod === fallback.mod && role.name === fallback.name, score: 1
+  } : null;
+}
+function renderQuiz() {
+  const question = nextQuestion();
+  const names = state.candidates.slice(0,20).map(role => `<span class="candidate">${role.displayName}</span>`).join('');
+  $('#quiz-progress').textContent = `候補 ${state.candidates.length}件 · ${state.scope}`;
+  $('#question').textContent = state.candidates.length <= 1 ? (state.candidates[0] ? `答え：${state.candidates[0].displayName}` : '候補がありません。1問戻ってください。') : question ? question.label : '候補を確認してください。';
+  document.querySelectorAll('[data-answer]').forEach(button => button.disabled = state.candidates.length <= 1 || !question);
+  $('#candidates').innerHTML = names + (state.candidates.length > 20 ? `<span class="candidate">ほか ${state.candidates.length-20}件</span>` : '');
+}
+function answer(answerValue) {
+  const question = nextQuestion(); if (!question) return;
+  state.history.push({candidates:[...state.candidates], asked:[...state.asked]}); state.asked.push(question.id);
+  if (answerValue !== 'unknown') state.candidates = state.candidates.filter(role => answerValue === 'yes' ? question.test(role) : !question.test(role));
+  renderQuiz();
+}
+function undo() { if (state.history.length) { const previous = state.history.pop(); state.candidates = previous.candidates; state.asked = previous.asked; } renderQuiz(); }
 function renderSources() { $('#mod-sources').innerHTML = Object.entries(state.registry).map(([code, mod]) => `<div><strong>${mod.label}</strong> (${code} / ${mod.version}) · <a target="_blank" rel="noreferrer" href="${mod.url}">指定リリース</a></div>`).join(''); }
 $('#close-dialog').onclick=()=>$('#role-dialog').close();
 load().catch(error => { document.body.innerHTML = `<main class="panel"><h1>データを読み込めませんでした</h1><p>${error.message}</p></main>`; });
