@@ -3940,5 +3940,3022 @@
     "source": "The Other Roles GMIA v1.4.1・同梱日本語説明",
     "sourceUrl": "https://github.com/GMIA-Nexus/TheOtherRolesGMIA/blob/c15ecbe1b3d5f6c20f4c26b7b18fead8092d8ca8/TheOtherRoles/Resources/stringData.json",
     "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_BountyHunter",
+    "displayName": "バウンティハンター",
+    "team": "Impostor",
+    "description": "指示されたターゲットをキルした場合、\n\r\n次のキルクールがとても短くなる。\n\r\nターゲットではないプレイヤーをキルした場合は、キルクールが伸びてしまう\n\r\nターゲットは一定時間ごとに変更される",
+    "abilities": [
+      "賞金稼ぎ (自動発動)",
+      "賞金首をキルすると次のキルクールが減少する",
+      "賞金首以外をキルすると次のキルクールが増加する"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%90%E3%82%A6%E3%83%B3%E3%83%86%E3%82%A3%E3%83%8F%E3%83%B3%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Mare",
+    "displayName": "メアー",
+    "team": "Impostor",
+    "description": "停電に特化したインポスター。\n\r\n停電中はキルクールが減少し、移動速度も速くなる\n\r\nただし、停電時以外はキルが出来ず、停電中は名前が赤くなる。(設定有)",
+    "abilities": [
+      "闇夜に紛れて (停電中自動発動)",
+      "キルクールが減少し、移動速度が速くなるが",
+      "名前が赤くなってしまう"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%A1%E3%82%A2%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_FireWorks",
+    "displayName": "花火職人",
+    "team": "Impostor",
+    "description": "[[ワンクリックボタン]]を押すことで、花火を最大5か所に設置可能。\n\r\n全て設置した後、インポスター最後の生き残りになった時に、\n\r\n再度、[[ワンクリックボタン]]を押すことで一斉起爆できる\n\r\n花火が設置されている間はキルできない。(設定有)",
+    "abilities": [
+      "花火設置 / 打ち上げ花火 ([[ワンクリックボタン]])",
+      "花火をまだ設置しきれてない場合、使用した場所に花火を設置できる。",
+      "打ち上げ準備が出来たに使用すると、起爆し、設置した場所の周りを爆発することができる",
+      "爆発に巻き込まれたら死亡する。(死因：\"爆死\")"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E8%8A%B1%E7%81%AB%E8%81%B7%E4%BA%BA",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_SerialKiller",
+    "displayName": "シリアルキラー",
+    "team": "Impostor",
+    "description": "キルクールが他のインポスターに比べて短い反面、\n\r\n変身のクールタイムが明ける前にキルしないと自爆する",
+    "abilities": [
+      "衝動が抑えられない...(1キル後常時発動)",
+      "1キル以上していると発動",
+      "自殺クールが0になると自殺する",
+      "キルをすることで自殺クールが回復する"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB%E3%82%AD%E3%83%A9%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_ShapeMaster",
+    "displayName": "シェイプマスター",
+    "team": "Impostor",
+    "description": "シェイプシフトに特化したインポスター\n\r\n返信持続時間が通常のシェイプシフターよりも短い反面、\n\r\n変身解除後のクールダウンが無く、無限に変身することができる\n\r\n変身継続時間は設定で変更が可能",
+    "abilities": [
+      "マスターシェイプ (シェイプシフト)",
+      "クールダウン無しでシェイプシフトが出来ます。",
+      "変身の証拠も残りません"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B7%E3%82%A7%E3%82%A4%E3%83%97%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Vampire",
+    "displayName": "ヴァンパイア",
+    "team": "Impostor",
+    "description": "プレイヤーを噛むことで遅延キルが可能\n\r\n(時間が経過 or 会議が始まると死亡する)\n\r\n[[ベイト]]、[[インセンダー]]の場合遅延キルは発生せず通常キルになりターゲットの能力が発動される。",
+    "abilities": [
+      "吸血 (キル時自動発動)",
+      "[[ベイト]]、[[インセンダー]]以外にキルを行うと自動発動",
+      "一定時間が経つ or 会議発生でターゲットがその場で死亡する"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%B4%E3%82%A1%E3%83%B3%E3%83%91%E3%82%A4%E3%82%A2",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Warlock",
+    "displayName": "ウォーロック",
+    "team": "Impostor",
+    "description": "キルをすると一番近くの人に呪いがかかる。\n\r\n次から変身ボタンを押すと呪われた人が一番近い人をキルする。\n\r\n変身した場合、通常のキルになる。\n\r\nまた、1ターンに1人しか呪うことはできない",
+    "abilities": [
+      "呪文 (通常状態でキル)",
+      "キルターゲットに呪いをかける",
+      "呪いがいる状態で変身ボタンを押すと一番近い人をキルする",
+      "シェイプシフト中にキルを行っても呪文の能力は発動しない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A6%E3%82%A9%E3%83%BC%E3%83%AD%E3%83%83%E3%82%AF",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Witch",
+    "displayName": "ウィッチ",
+    "team": "Impostor",
+    "description": "モード変更アクションに応じたアクションを行うと「Kill」と「Spell」が切り替わる\n\r\nSpellの表示できるすると呪うことができる\n\r\nモード変更アクションが[[ワンクリックボタン]]の場合、\n\r\nキルボタンが光っている状態で[[ワンクリックボタン]]を使用することで、\n\r\n一番近い人にいるプレイヤー(インポスター除く)を呪うことができる。\n\r\nモード変更アクションがダブルクリックの場合、\n\r\nキルボタンを一回押すと呪い付与、\n\r\nキルボタンを対象に向けて素早く二回押すと通常キルを行う\n\r\n\r\n呪いをかけられた人は会議で「†」が付き、\n\r\nウィッチを追放しなければ会議後に死亡する",
+    "abilities": [
+      "魔術 ([[ワンクリックボタン]] / Spellモード中にキル / ダブルクリックのシングルトリガー)",
+      "能力発動時の現在のキルターゲットを呪うことができる。",
+      "呪われた人は次会議でウィッチを追放しないと死亡(死因：\"呪殺\")する"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A6%E3%82%A3%E3%83%83%E3%83%81",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Mafia",
+    "displayName": "マフィア",
+    "team": "Impostor",
+    "description": "初期状態ではキルが封じられている\n\r\n仲間の生存人数が設定人数以下 or 設定ターン経過すると\n\r\n自身もキルが可能になる",
+    "abilities": [
+      "潜伏 (常時発動)",
+      "仲間の生存人数が設定人数以下でなく、設定ターンも経過してない状態",
+      "キルが行えない。",
+      "子分作成 ([[ワンクリックボタン]])",
+      "使用時のキルターゲットを[[サイドキックマッドメイト]]にする。",
+      "潜伏状態でも使用可能"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%83%95%E3%82%A3%E3%82%A2",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Puppeteer",
+    "displayName": "パペッティア",
+    "team": "Impostor",
+    "description": "キルした対象に、対象が次に近づいたクルーをキルさせることができる\n\r\n対象がキルした相手がキル発動するものであった場合、対象にその効果が反映される。\n\r\n通常のキルを行うことはできない",
+    "abilities": [
+      "パペット作成 (キル時自動発動)",
+      "キルした対象をパペットにします"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%91%E3%83%9A%E3%83%83%E3%83%86%E3%82%A3%E3%82%A2",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_TimeThief",
+    "displayName": "タイムシーフ",
+    "team": "Impostor",
+    "description": "キルを行うと会議時間が減少する。\n\r\nタイムシーフが追放または殺害されると、失われた会議時間が返ってくる",
+    "abilities": [
+      "時間泥棒 (キル成功時自動発動)",
+      "減少する会議時間 × キル数分会議時間が減少する。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%BF%E3%82%A4%E3%83%A0%E3%82%B7%E3%83%BC%E3%83%95",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Sniper",
+    "displayName": "スナイパー",
+    "team": "Impostor",
+    "description": "遠くの敵を狙撃できるインポスター\n\r\nシェイプシフトした地点から解除した地点の延長線上の敵を一人撃ち抜く。\n\r\n射線上のクルーには射撃音(名前の上に赤い！)が聞こえる\n\r\n打ち切るまで通常キル出来ない。",
+    "abilities": [
+      "狙撃 (シェイプシフト)",
+      "シェイプシフトを行った地点から解除した地点の延長線上に向けて弾を発射できる",
+      "弾に一番近いプレイヤーをキルすることができる。死因：\"狙撃\"",
+      "延長線上にプレイヤーがいない場合は失敗に終わる。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B9%E3%83%8A%E3%82%A4%E3%83%91%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_EvilTracker",
+    "displayName": "イビルトラッカー",
+    "team": "Impostor",
+    "description": "他人の位置が分かるインポスター。\n\r\n味方のインポスターとシェイプシフトで選んだ一人の位置が矢印で表示される。\n\r\n味方インポスターのキルによるキルフラッシュも見える。",
+    "abilities": [
+      "トラック (シェイプシフト選択)",
+      "シェイプシフトで選択したプレイヤーを追跡します",
+      "サイドキックを作成できるがOnだと同時に",
+      "近くのプレイヤーの役職を[[サイドキックマッドメイト]]に変更にします",
+      "味方追跡 (常時発動)",
+      "タスクターン中、相方の位置が赤矢印で表示される。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A4%E3%83%93%E3%83%AB%E3%83%88%E3%83%A9%E3%83%83%E3%82%AB%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Stealth",
+    "displayName": "ステルス",
+    "team": "Impostor",
+    "description": "キルを行ったり、[[ワンクリックボタン]]を使用すると、\n\r\n同じ部屋にいるほかのプレイヤーの視界が少しの間暗転する",
+    "abilities": [
+      "断線工事 ([[ワンクリックボタン]])",
+      "ワンクリックボタンで暗転できるがOnの場合のみ",
+      "ダークネス発動時に追加で暗転させる部屋を設定することができる",
+      "通路や部屋判定でない場合は追加できない",
+      "ダークネス (キル成功時自動発動)",
+      "キルを行った部屋,断線工事によって追加した部屋を一定時間暗転させる",
+      "自身の視界は暗転されない。",
+      "通路や部屋判定でない場合かつ断線工事によって追加した部屋が無い場合は暗転が発生しない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B9%E3%83%86%E3%83%AB%E3%82%B9",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_NekoKabocha",
+    "displayName": "ネコカボチャ",
+    "team": "Impostor",
+    "description": "キルされた際、自分を殺してきたプレイヤーを殺し返す",
+    "abilities": [
+      "道連れ (キルされた時 / 追放かつ設定有効時自動発動)",
+      "キルされた時、キラーを殺し返す。",
+      "追放されかつ追放された時に誰かを道連れにするが有効の場合、誰かを道連れにする"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%8D%E3%82%B3%E3%82%AB%E3%83%9C%E3%83%81%E3%83%A3",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_EvilHacker",
+    "displayName": "イビルハッカー",
+    "team": "Impostor",
+    "description": "会議直前のアドミン情報を見ることができる。\n\r\n誰もいない部屋は省略される。\n\r\nインポスターがいる部屋には★印が付く。\n\r\n死体がある部屋には死体数が表示される。",
+    "abilities": [
+      "ポータブルアドミン (常時発動)",
+      "会議開始時チャットに会議直前のアドミンが表示される。",
+      "また、各プレイヤーの名前の下にも表示される。",
+      "ハッキング (シェイプシフト画面)",
+      "シェイプシフト画面を開くことで",
+      "ポータブルアドミンと同一のアドミン情報を手に入れることが出来る。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A4%E3%83%93%E3%83%AB%E3%83%8F%E3%83%83%E3%82%AB%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Penguin",
+    "displayName": "ペンギン",
+    "team": "Impostor",
+    "description": "キルボタン一回で相手を拘束して連れまわすことができる\n\r\nもう一度キルボタンを押すか一定時間経過でキルする\n\r\nキルボタン2回で直接キル可能。",
+    "abilities": [
+      "拉致 (キル時自動発動)",
+      "キルターゲットを拉致することができる",
+      "拉致中、ターゲットは身動きが取れない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9A%E3%83%B3%E3%82%AE%E3%83%B3",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Insider",
+    "displayName": "インサイダー",
+    "team": "Impostor",
+    "description": "キルした相手の役職が分かる\n\r\nまた、味方インポスターの役職と能力が見える\n\r\nさらに、特定回数キルするとマッドメイトも分かる",
+    "abilities": [
+      "サーチ (キル時自動発動)",
+      "キルした相手の役職が分かる",
+      "アドオンは見ることができない。",
+      "また、タスク進捗も見ることができる",
+      "内通 (常時発動 / 条件達成時)",
+      "味方インポスターの役職が分かる",
+      "一定数キルを行うことでマッドメイトも分かる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A4%E3%83%B3%E3%82%B5%E3%82%A4%E3%83%80%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_TeleportKiller",
+    "displayName": "テレポートキラー",
+    "team": "Impostor",
+    "description": "変身することで、シェイプシフトで選択した人をキルできる。\n\r\nこの時、自身と対象の位置が入れ替わる。\n\r\n対象がインポスターの時、キルは発生せずに位置のみ入れ替わる。\n\r\n対象が死亡済や特殊な位置に居る場合、テレポートキラーは自爆してしまう",
+    "abilities": [
+      "テレポート！(シェイプシフト)",
+      "変身対象と自身の位置を入れ替える",
+      "変身対象がインポスター以外だとキルを行う",
+      "梯子等の特殊な位置にいると自爆する"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%86%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A9%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Bomber",
+    "displayName": "爆弾魔",
+    "team": "Impostor",
+    "description": "キルボタンが光っている状態で[[ワンクリックボタン]]を使用することで、\n\r\n一番近くにいるプレイヤー(インポスターを除く)に爆弾を付与できる\n\r\n爆弾は一定時間経過すると爆発し、付与された人は周囲の人を巻き込んで死亡する\n\r\n爆弾は会議が始まると爆発しない\n\r\nまた、爆発する前に死亡した場合も爆発しない",
+    "abilities": [
+      "芸術 ([[ワンクリックボタン]])",
+      "能力発動時のキルターゲットへ爆弾を付与する",
+      "爆弾は一定時間後に爆発する。",
+      "爆発すると周囲の人を巻き込んで死亡する。(死因：爆死)"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E7%88%86%E5%BC%BE%E9%AD%94",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_AntiReporter",
+    "displayName": "アンチレポーター",
+    "team": "Impostor",
+    "description": "キルボタンが光っている状態で[[ワンクリックボタン]]を使用することで、\n\r\n1番近くに居るプレイヤー(インポスターを除く)の\n\r\n緊急会議ボタン・死体通報の使用を無効できる",
+    "abilities": [
+      "メガホン破壊 ([[ワンクリックボタン]])",
+      "能力発動時のキルターゲットの",
+      "緊急会議ボタン・死体通報を無効化できる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A2%E3%83%B3%E3%83%81%E3%83%AC%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Tairou",
+    "displayName": "大狼",
+    "team": "Impostor",
+    "description": "誰かが自身に対し能力を使用しても、\n\r\n大狼ではなく、クルーメイトとして処理される",
+    "abilities": [
+      "大狼の貫禄 (常時発動)",
+      "占い系統、シェリフ系統が自身に能力を発動しても",
+      "クルーメイトとして処理が実行される"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E5%A4%A7%E7%8B%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Evilgambler",
+    "displayName": "イビルギャンブラー",
+    "team": "Impostor",
+    "description": "キルするとギャンブルが出来る\n\r\nギャンブルが成功すると次のキルクールが減少する。\n\r\nただし、失敗すると次のキルクールが増加する",
+    "abilities": [
+      "ギャンブル！ (キル時自動発動)",
+      "設定確率によって成功か失敗か判定される。",
+      "結果に基づいて次のキルクールが設定される。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A4%E3%83%93%E3%83%AB%E3%82%AE%E3%83%A3%E3%83%B3%E3%83%96%E3%83%A9%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Notifier",
+    "displayName": "ノーティファー",
+    "team": "Impostor",
+    "description": "キルクールが他のインポスターに比べて短いが、\n\r\nキルをした時に一定確率で全員にフラッシュが発生する",
+    "abilities": [
+      "ノイズフラッシュ (キル時自動発動)",
+      "キル成功時、一定確率で全員にキルフラッシュが届く"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%8E%E3%83%BC%E3%83%86%E3%82%A3%E3%83%95%E3%82%A1%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Magician",
+    "displayName": "マジシャン",
+    "team": "Impostor",
+    "description": "[[ワンクリックボタン]]を使用することで、\n\r\n一番近くの人をマジックのターゲットに指定できる\n\r\nキルを指定数行うと、ターゲットはその場に死体が残らず死亡する",
+    "abilities": [
+      "マジック([[ワンクリックボタン]])",
+      "使用時一定範囲に居る人をマジックの対象にする"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%82%B8%E3%82%B7%E3%83%A3%E3%83%B3",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Limiter",
+    "displayName": "リミッター",
+    "team": "Impostor",
+    "description": "キルクールが他のインポスターに比べて速いが、\n\r\n体力の限界を迎えると自爆してしまう\n\r\n単数、経過時間、キル数のいずれかの条件が満たされると\n\r\n自爆モードに切り替わり、\n\r\n誰かをきるしようとすると周囲を巻き込んで自爆する",
+    "abilities": [
+      "自爆 (自爆モード中に誰かをキル)",
+      "自爆モード中にキルすることで発動",
+      "周囲を巻き込んで自爆する。",
+      "自身、巻き込まれの死因は\"爆死\""
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%AA%E3%83%9F%E3%83%83%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Decrescendo",
+    "displayName": "デクレッシェンド",
+    "team": "Impostor",
+    "description": "設定回数キルするとキルクール増加等の弱化を受けてしまう\n\r\nまた、追加でキルするたびにさらに弱化していく。",
+    "abilities": [
+      "だんだんよわくなぁる (キル時自動発動)",
+      "弱化数に達すると弱化モードになる。",
+      "弱化モード中にキルするとキルクール増加などの弱化を受ける"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%87%E3%82%AF%E3%83%AC%E3%83%83%E3%82%B7%E3%82%A7%E3%83%B3%E3%83%89",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Alien",
+    "displayName": "エイリアン",
+    "team": "Impostor",
+    "description": "ターン毎に設定された確率に応じて、様々な役職や能力に変化する。\n\r\nターン毎の役職や能力は会議時に知ることができる。\r\n\r\n 能力\r\n★ 七変化 (常時発動)\n\r\n　 ターンによって様々な能力を持つ。\r\n\r\n※ 植え付け (自投票)\n\r\n　 自投票後、仲間のインポスターに投票することで\n\r\n　 現在の能力を仲間のインポスターに植え付けれる\n\r\n　 植え付けられると[[ハイジャックエイリアン]]になり、元の役職と一時的に失う\n\r\n\r\n 設定\r\n|設定名 |(設定値 / デフォルト値)| 説明 |\r\n|------|---------------------|------|\r\n|初手ターンから能力を持っている|On/Off (Off)|初手ターンから何かしら能力が付与されます|\r\n|現在の能力がタスクターン中にも分かる|On/Off (Off)|OFFにするとタスクターンモードが???と表示されます|\r\n|ヴァンパイアになる確率(%)|0/100/5 (100)|[[ヴァンパイア]]の能力になる確率|\r\n|┣ 噛んだ相手の移動速度が低下する|On/Off (On)|[[ヴァンパイア]]参照|\r\n|┃ ┗ 発動するまでの時間(秒)|0/1000/1 (10)|[[ヴァンパイア]]参照|\r\n|┗ 殺害までの時間(秒)|0/100/0.2 (10)|[[ヴァンパイア]]参照|\r\n|イビルハッカーになる確率(%)|0/100/5 (100)|[[イビルハッカー]]の能力になる確率|\r\n|リミッターになる確率(%)|0/100/5 (100)|[[リミッター]]の能力になる確率|\r\n|┗ 爆発範囲|0.5/20/0.5 (5)|[[リミッター]]参照|\r\n|パペッティアになる確率(%)|0/100/5 (100)|[[パペッティア]]の能力になる確率|\r\n|┗ パペット有効化までの時間(秒)|0/100/0.5 (5)|[[パペッティア]]参照|\r\n|ステルスになる確率(%)|0/100/5 (100)|[[ステルス]]の能力になる確率|\r\n|┗ 暗転の持続時間(秒)|0.5/5/0.5 (1)|[[ステルス]]参照|\r\n|リモートキラーになる確率(%)|0/100/5 (100)|[[リモートキラー]]の能力になる確率|\r\n|ノーティファーになる確率(%)|0/100/5 (100)|[[ノーティファー]]の能力になる確率|\r\n|┗ フラッシュが発生する確率(%)|0/100/5 (50)|[[ノーティファー]]参照|\r\n|タイムシーフになる確率(%)|0/100/5 (100)|[[タイムシーフ]]の能力になる確率|\r\n|┣ 減少する会議時間(秒)|0/100/5(50)|[[タイムシーフ]]参照|\r\n|┗ 死亡後に盗んだ時間を返す|On/Off (Off)|[[タイムシーフ]]参照|\r\n|大狼になる確率(%)|0/100/5 (100)|[[大狼]]の能力になる確率|\r\n|┗ シェリフ誤爆の死因を返り討ちにする|On/Off (Off)|[[大狼]]参照|\r\n|メイヤーになる確率(%)|0/100/5 (100)|[[メイヤー]]の能力になる確率|\r\n|┗ 追加投票の個数(票)|1/99 (1)|[[メイヤー]]参照|\r\n|モグラになる確率(%)|0/100/5 (100)|[[モグラ]]の能力になる確率|\r\n|プログレスキラーになる確率(%)|0/100/5 (100)|[[プログレスキラー]]の能力になる確率|\r\n|┣ タスクを終えたマッドメイト系役職が分かる|On/Off (Off)|[[プログレスキラー]]参照|\r\n|┗ ワークホースのプレイヤーが分かる|On/Off (Off)|[[プログレスキラー]]参照|\r\n|ネコカボチャになる確率(%)|0/100/5 (100)|[[ネコカボチャ]]の能力になる確率|\r\n|┣ インポスターを道連れにする|On/Off (Off)|[[ネコカボチャ]]参照|\r\n|┣ マッドメイトを道連れにする|On/Off (Off)|[[ネコカボチャ]]参照|\r\n|┣ ニュートラルを道連れにする|On/Off (Off)|[[ネコカボチャ]]参照|\r\n|┗ 追放された時に誰かを道連れにする|On/Off (Off)|[[ネコカボチャ]]参照|\r\n|インサイダーになる確率(%)|0/100/5 (100)|[[インサイダー]]の能力になる確率|\r\n|ペンギンになる確率(%)|0/100/5 (100)|[[ペンギン]]の能力になる確率|\r\n|┣ 引き連れる時間|5/100/1 (10)|[[ペンギン]]参照|\r\n|┗ 会議開始時に引き連り中ならキルする|On/Off (Off)|[[ペンギン]]参照|\r\n|カムバッカーになる確率(%)|0/100/5 (100)|[[カムバッカー]]参照|\r\n|ノーマル状態になる確率(%)|0/100/5 (0)|何も能力を持たない能力|\r\n|植え付け能力を持つ|On/Off (On)|仲間のインポスターに能力を植え付けれるか|\r\n|┣ 植え付けれる回数|1/20/1 (2)|植え付けれる最大回数|\r\n|┗ 植え付けが解除されるターン数|1/20/1 (2)|植え付けれるターン数|\r\n\r\n 補足説明/仕様\r\n・初手ターンから能力を持っているがOffの時、初手ターンの能力はNone(ノーマルと一緒)になります\n\r\n・mode:イビルハッカーの時でもシェイプで疑似アドミンは使えません\n\r\n・mode:リミッターの時でも会議が始まっても自爆しません\n\r\n・mode:ステルスの時もでワンクリックで暗転部屋追加は出来ません\n\r\n・mode:リモートキラーの時、能力使用時、キルワープが発生します\n\r\n・mode:タイムシーフの時にキルした数  減少する会議時間の数だけ会議時間が減少します(永続)\n\r\n・mode:メイヤーの時での投票数の増加はその会議のみです\n\r\n・mode:プログレスキラーの時、見える能力は一時的です\n\r\n・mode:インサイダーの時、キルした相手の役職が分かります\n\r\n・mode:ペンギンの時、残り時間は表示されません\n\r\n・mode:ノーマルの時、ただのインポスターと一緒です",
+    "abilities": [
+      "七変化 (常時発動)",
+      "ターンによって様々な能力を持つ。",
+      "植え付け (自投票)",
+      "自投票後、仲間のインポスターに投票することで",
+      "現在の能力を仲間のインポスターに植え付けれる",
+      "植え付けられると[[ハイジャックエイリアン]]になり、元の役職と一時的に失う",
+      "設定",
+      "補足説明/仕様",
+      "・初手ターンから能力を持っているがOffの時、初手ターンの能力はNone(ノーマルと一緒)になります",
+      "・mode:イビルハッカーの時でもシェイプで疑似アドミンは使えません",
+      "・mode:リミッターの時でも会議が始まっても自爆しません",
+      "・mode:ステルスの時もでワンクリックで暗転部屋追加は出来ません",
+      "・mode:リモートキラーの時、能力使用時、キルワープが発生します",
+      "・mode:タイムシーフの時にキルした数  減少する会議時間の数だけ会議時間が減少します(永続)",
+      "・mode:メイヤーの時での投票数の増加はその会議のみです",
+      "・mode:プログレスキラーの時、見える能力は一時的です",
+      "・mode:インサイダーの時、キルした相手の役職が分かります",
+      "・mode:ペンギンの時、残り時間は表示されません",
+      "・mode:ノーマルの時、ただのインポスターと一緒です"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%83%B3",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_AlienHijack",
+    "displayName": "ハイジャックエイリアン",
+    "team": "Impostor",
+    "description": "[[エイリアン]]に植え付けされたインポスター。\n\r\n[[エイリアン]]に植え付けられたモードによって能力が変化する。\n\r\n植え付けは一定時間で解除され、元の役職に戻る。",
+    "abilities": [
+      "植え付け(常時発動)",
+      "[[エイリアン]]に植え付けられた能力。",
+      "設定は[[エイリアン]]の者に準ずる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%8F%E3%82%A4%E3%82%B8%E3%83%A3%E3%83%83%E3%82%AF%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%83%B3",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Mole",
+    "displayName": "モグラ",
+    "team": "Impostor",
+    "description": "ベントに入ることで、\n\r\nマップ内の全ベントからランダムにテレポートされる。\n\r\n通常のベント移動はできない",
+    "abilities": [
+      "ベントほりほり(ベント使用時)",
+      "マップ内の全ベントからランダムにテレポートされる。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%A2%E3%82%B0%E3%83%A9",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_EvilTeller",
+    "displayName": "イビルテラー",
+    "team": "Impostor",
+    "description": "[[ワンクリックボタン]]を使用した時のキルターゲットに\n\r\n一定時間近付いていると対象の役職が分かる",
+    "abilities": [
+      "どれどれぇ^^? ([[ワンクリックボタン]])",
+      "使用時のキルターゲットに一定時間近付いていると対象の役職が分かる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A4%E3%83%93%E3%83%AB%E3%83%86%E3%83%A9%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_ProgressKiller",
+    "displayName": "プログレスキラー",
+    "team": "Impostor",
+    "description": "タスクを全て完了したプレイヤーを知ることができる。\n\r\n[[ワークホース]]が付与されたプレイヤーを知れるが、設定が変更が可能\n\r\nプレイヤーの役職次第で表示は異なり、以下のとおりである\n\r\n\r\n|マーク|条件|\r\n|------|----|\r\n|◆|[[ワークホース]]が付与されている|\r\n|☆|マッドメイト系役職|\r\n|〇|クルー、ニュートラル役職|\r\n 上から順番に適応",
+    "abilities": [
+      "タスク観察 (常時発動)",
+      "タスクを終わらせたプレイヤーにマークがつく。",
+      "表示,条件は上記参照。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%AC%E3%82%B9%E3%82%AD%E3%83%A9%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_EvilAddoer",
+    "displayName": "イビルアドナー",
+    "team": "Impostor",
+    "description": "イビルアドナー専用で属性が付与される。\n\r\n同じ属性が重複されている場合、重複した属性はイビルアドナーの設定が優先される。\n\r\nただし、ラストインポスターで付与された属性はラストインポスターの設定が優先される。",
+    "abilities": [],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A4%E3%83%93%E3%83%AB%E3%82%A2%E3%83%89%E3%83%8A%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_ConnectSaver",
+    "displayName": "コネクトセーバー",
+    "team": "Impostor",
+    "description": "会議で自投票するとコネクトモードに変更できる\n\r\nコネクトモード中に自身以外の2名に投票するとその2名をコネクトすることが出来る\n\r\n次のタスクターン中にコネクト相手のどちらかをキルすると\n\r\nコネクトされた人を両方キルすることができる",
+    "abilities": [
+      "コネクト(会議で自投票→対象に投票)",
+      "チャットにコネクトモードになったと通知が来た後",
+      "コネクトする2名に投票することで命を接続できる",
+      "切断(コネクトモード中にコネクト対象をキルすると発動)",
+      "コネクトされた人をキルすると",
+      "もう一方もキルすることが出来る"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B3%E3%83%8D%E3%82%AF%E3%83%88%E3%82%BB%E3%83%BC%E3%83%90%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Reloader",
+    "displayName": "リローダー",
+    "team": "Impostor",
+    "description": "[[ワンクリックボタン]]を使用することで、\n\r\nキルクールダウンが設定値にリロードされる。",
+    "abilities": [
+      "リロード([[ワンクリックボタン]])",
+      "使用するとキルクールダウンが設定になる。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%AA%E3%83%AD%E3%83%BC%E3%83%80%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Jumper",
+    "displayName": "ジャンパー",
+    "team": "Impostor",
+    "description": "[[ワンクリックボタン]]で、\n\r\n目的地を設定できる\n\r\n目的地を設定後、再度[[ワンクリックボタン]]を使用することで\n\r\n何度か着地を経由しながら目的地までジャンプすることが出来る。\n\r\n着地点には赤い丸で通知され、近くにいたプレイヤーを巻き込んでしまう",
+    "abilities": [
+      "目的地設定 ([[ワンクリックボタン]])",
+      "目的地が未設定場合のみ。",
+      "使用時の場所を目的地に設定する。",
+      "じゃ～んぷ！ ([[ワンクリックボタン]])",
+      "目的地が設定済みの時のみ。",
+      "何度か着地を経由しながら目的地までジャンプする。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%91%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_EarnestWolf",
+    "displayName": "一途な狼",
+    "team": "Impostor",
+    "description": "[[ワンクリックボタン]]を使用することで、通常キルとオーバーキルを切り替える事が出来る\n\r\nオーバーキルモード中はキルディスタンスが長い\n\r\nオーバーキルモード中にキルをするとキルターゲットの能力、\n\r\nガードを貫通するがキルクールが倍率で増加する",
+    "abilities": [
+      "モードチェンジ([[ワンクリックボタン]])",
+      "使用することで、オーバーキルモードと通常キルモードを切り替えることができる。",
+      "オーバーキル(オーバーキルモード中にキルを行う)",
+      "相手の役職/属性処理を行わずキルが出来る。",
+      "キルを行うとキルクールが設定倍率増加してしまう"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E4%B8%80%E9%80%94%E3%81%AA%E7%8B%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Amnesiac",
+    "displayName": "記憶喪失者",
+    "team": "Impostor",
+    "description": "自身の事をシェリフだと思い込んでいるインポスター\n\r\nシェリフのように見えているが誤爆はしない\n\r\n相方も分からない\n\r\nベントとサボタージュが使用できない",
+    "abilities": [],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E8%A8%98%E6%86%B6%E5%96%AA%E5%A4%B1%E8%80%85",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Camouflager",
+    "displayName": "カモフラージャー",
+    "team": "Impostor",
+    "description": "[[ワンクリックボタン]]を使用することで、\n\r\nプレイヤー全員(ウルトラスターを除く)のスキンが一定時間グレーになり、\n\r\n認識できない状態にする",
+    "abilities": [
+      "カモフラージュ([[ワンクリックボタン]])",
+      "使用すると一定時間全員の姿がグレーになる",
+      "誰かがカモフラージュ使用中の場合、カモフラージュは使用できない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%AB%E3%83%A2%E3%83%95%E3%83%A9%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_EvilSatellite",
+    "displayName": "イビルサテライト",
+    "team": "Impostor",
+    "description": "会議中に自投票することでサテライトモードになれる。\n\r\nサテライトモード中に誰かに投票することで\n\r\n対象の経路が表示される。",
+    "abilities": [
+      "君はどこを通ったのかな? (自投票)",
+      "対象の経路がチャットに表示される。",
+      "通路やぬーん、梯子等は表示されず、部屋名のみ記載される"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A4%E3%83%93%E3%83%AB%E3%82%B5%E3%83%86%E3%83%A9%E3%82%A4%E3%83%88",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Curser",
+    "displayName": "カーサー",
+    "team": "Impostor",
+    "description": "ターゲットをシェイプで選択が可能、\n\r\nその選択したターゲットにθが表示される。\n\r\nただし、ターゲットを決めると呪える回数が減るぞ。\n\r\n\r\nθが表示されているターゲットをキルすると次のキルクールが短くなる。\n\r\nターゲット以外をキルしても、いつも通りのキルクールになる。",
+    "abilities": [
+      "悪霊の加護 (シェイプシフトで選択)",
+      "シェイプシフトした相手を呪うことができる",
+      "呪った相手をキルすると次のキルクールダウンが",
+      "ターゲット切った時のキルクールの設定値になる",
+      "自身が呪い相手をキルしていない場合、効果は発揮しない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%AB%E3%83%BC%E3%82%B5%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_ProBowler",
+    "displayName": "プロボーラー",
+    "team": "Impostor",
+    "description": "シェイプシフトをして穴を掘る\n\r\n穴を掘った後、キルボタンを使用して\n\r\nキルターゲットを掘った穴に落としてキルをする\n\r\n\r\n会議後、穴は埋まる",
+    "abilities": [
+      "穴掘り(シェイプシフト)",
+      "シェイプシフトした場所に穴を掘る。",
+      "穴を掘った時、シェイプの殻が全視点で見える",
+      "ｺﾛｺﾛ-(穴がある状態でキル)",
+      "穴に向かってキル対象が飛ぶ",
+      "穴に向かって転がるがOnの時、キルした位置から穴の方向へ約1sかけて移動し、",
+      "死亡する。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%97%E3%83%AD%E3%83%9C%E3%83%BC%E3%83%A9%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Eraser",
+    "displayName": "イレイサー",
+    "team": "Impostor",
+    "description": "[[ワンクリックボタン]]を使用することで\n\r\n対象の役職をクルーメイトにすることができる。\n\r\nただし、設定によって役職を消し損ねたりする。\n\r\nターゲットを決めた時、キルクールダウンはリセットされる",
+    "abilities": [
+      "役職ｹｼｹｼ([[ワンクリックボタン]])",
+      "使用時のキルターゲットの役職を削除する",
+      "設定で役職削除が無効になっている場合は削除したと思いこむ"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A4%E3%83%AC%E3%82%A4%E3%82%B5%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_EvilMaker",
+    "displayName": "イビルメーカー",
+    "team": "Impostor",
+    "description": "[[ワンクリックボタン]]を使用した時のキルターゲットを[[サイドキックマッドメイト]]にする。\n\r\n[[サイドキックマッドメイト]]された人と親分は通じ合う。",
+    "abilities": [
+      "マッド作成([[ワンクリックボタン]])",
+      "使用時のキルターゲットを[[サイドキックマッドメイト]]にする"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A4%E3%83%93%E3%83%AB%E3%83%A1%E3%83%BC%E3%82%AB%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_UnFortuner",
+    "displayName": "アンフォーチュナー",
+    "team": "Impostor",
+    "description": "属性を付与することのできるインポスター。\n\r\nファントムボタンを使用した時のキルターゲットに\n\r\n次会議開始時、ランダムで属性を付与する。\n\r\n\n\r\n'1回使用で属性を1つ渡す'がON、または上書きする付与属性が未設定の場合は、ランダムで1つ。\n\r\nそれ以外の場合は設定した属性が全て付与される。",
+    "abilities": [
+      "花言葉は分かる?([[ワンクリックボタン]])",
+      "ワンクリックボタンを使用した時のキルターゲットに",
+      "次の会議開始時のタイミングで属性を付与する。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A2%E3%83%B3%E3%83%95%E3%82%A9%E3%83%BC%E3%83%81%E3%83%A5%E3%83%8A%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_QuickKiller",
+    "displayName": "クイックキラー",
+    "team": "Impostor",
+    "description": "クイックモードに必要な生存人数人以上生存している状態でキルをすると、\n\r\nクイックモードの効果時間秒間の間、クイックモードになる\n\r\nクイックモード中はキルクールが0sになる。\n\r\nクイックモード終了時、キルクールが戻る。",
+    "abilities": [
+      "アイツらも巻き添えだ...(キル)",
+      "クイックモードに必要な生存人数人以上生存している状態でキルすると<",
+      "キル後、クイックモードの効果時間の設定秒数の間、",
+      "キルクールが0sになる。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%AD%E3%83%A9%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_BorderKiller",
+    "displayName": "ボーダーキラー",
+    "team": "Impostor",
+    "description": "設定人数以上自身がキルを行わないと、\n\r\nインポスターが勝利しても自身は勝利できない。",
+    "abilities": [
+      "もっと仕留めないと... (自動発動)",
+      "目標人数以上キルを行わないと、インポスター勝利をしても",
+      "自身が勝利できない。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9C%E3%83%BC%E3%83%80%E3%83%BC%E3%82%AD%E3%83%A9%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Ballooner",
+    "displayName": "バルーナー",
+    "team": "Impostor",
+    "description": "ワンクリックボタンを使用することで風船が破裂し周囲のプレイヤーを爆破できる。\n\r\n\n\r\nまた、タスクターン中に歩くことで\n\r\n風船が膨らみ爆破範囲が広がる。",
+    "abilities": [
+      "空気補充 (歩く)",
+      "歩くことで風船が膨らみ、爆破範囲が広がる",
+      "破裂 ([[ワンクリックボタン]])",
+      "現在の爆破範囲が0より上の時に使用できる。",
+      "現在の爆破範囲の周囲にいるプレイヤーを爆破(死因：爆死)させる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%90%E3%83%AB%E3%83%BC%E3%83%8A%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_ShapeKiller",
+    "displayName": "シェイプキラー",
+    "team": "Impostor",
+    "description": "通報を偽装できるインポスター。\n\r\nシェイプシフトして死体通報することでシェイプシフトした相手の通報にできる。",
+    "abilities": [
+      "擬装通報 (通報時)",
+      "通報者をシェイプシフトのターゲットに偽装することができる。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B7%E3%82%A7%E3%82%A4%E3%83%97%E3%82%AD%E3%83%A9%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_CharismaStar",
+    "displayName": "カリスマスター",
+    "team": "Impostor",
+    "description": "任意のプレイヤーを自身から一番近いベントへ集合させることができるインポスター。\n\r\nキルボタンはダブルクリックを使い分ける。\n\r\nシングルクリックでは集合メンバーを決め、\n\r\nダブルクリックでは通常キルをする。\n\r\n\r\n集合メンバーは複数人設定することができ、消えるボタンを押すことでそのメンバーを自身付近のベントに集めることができる。\n\r\n\r\n全員集合できる設定をONにしている時、誰もメンバーを決めていないと全員を集合させることができる。\n\r\n集合をかけた時、対象プレイヤーがはしごを使用していると集まることが出来ない。設定により、集まれないプレイヤーは自爆する。",
+    "abilities": [
+      "オレんとこ来いよ (キル1回使用)",
+      "集合対象のターゲットを決める。",
+      "集合!! (消える)",
+      "自身から一番近いベントに集合させる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%AB%E3%83%AA%E3%82%B9%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Archer",
+    "displayName": "アーチャー",
+    "team": "Impostor",
+    "description": "弓矢を駆使し、クルーをキルすることができるインポスター。\n\r\nファントムボタンを押し、矢を放ちたい方向と逆方向に移動し、\n\r\nもう一度ファントムボタンを押すことで矢を放つことができる。\n\r\n矢が当たったプレイヤーはその場で死亡する(死因:命中)\n\r\n矢は壁に当たるか一定時間経過すると消滅する。",
+    "abilities": [
+      "貫け。([[ワンクリックボタン]])",
+      "ワンクリックを押し、矢を放ちたい方向の反対側に移動。",
+      "再度ワンクリックを押すとその方向に矢が放たれる。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A2%E3%83%BC%E3%83%81%E3%83%A3%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_EvilBlender",
+    "displayName": "イビルブレンダー",
+    "team": "Impostor",
+    "description": "1度のみ特殊サボタージュを発動することができるインポスター。\n\r\nドア閉め以外のサボタージュが発動されていない時にファントムボタンを押すと\n\r\n「毒ガス」をマップ全体に充満させることができる。\n\r\n毒ガスが発生した時、生存しているプレイヤーは一定時間以内に指定された部屋へ行かないと死亡する。(死因:窒息)\n\r\n毒ガス発生中は緊急ボタンは使用できず、サボタージュも発動できない。",
+    "abilities": [
+      "悪魔の調合([[ワンクリックボタン]])",
+      "「毒ガス」を船全体に充満させることができる。",
+      "毒ガス発生中、生存しているプレイヤー全員は",
+      "制限時間以内に、個別に割り当てられた部屋へ行かないと",
+      "死亡する(死因:窒息)",
+      "使用できるのは、1試合に1度のみ。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A4%E3%83%93%E3%83%AB%E3%83%96%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Madmate",
+    "displayName": "マッドメイト",
+    "team": "Madmate",
+    "description": "クルーだがインポスターの味方をする\n\r\nインポスターと互いに認識できない\n\r\nベントが使え、タスクはない。",
+    "abilities": [],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%83%83%E3%83%89%E3%83%A1%E3%82%A4%E3%83%88",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_MadGuardian",
+    "displayName": "マッドガーディアン",
+    "team": "Madmate",
+    "description": "クルーだがインポスターの味方をする\n\r\nインポスターと互いに認識できない\n\r\n規定数タスクを完了させるとシールドが付与される",
+    "abilities": [
+      "待ってましたご主人様! (規定タスク or タスク全て完了後常時発動)",
+      "キルさそうになると発動する",
+      "キルを防ぐ。",
+      "巻き込み等の特殊キルは防げない。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%83%83%E3%83%89%E3%82%AC%E3%83%BC%E3%83%87%E3%82%A3%E3%82%A2%E3%83%B3",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_MadSnitch",
+    "displayName": "マッドスニッチ",
+    "team": "Madmate",
+    "description": "クルーだがインポスターの味方をする\n\r\nインポスターと互いに認識できないが、既定のタスク数を完了させると\n\r\nマッドスニッチからインポスターを視認できるようになる",
+    "abilities": [
+      "探求 (規定タスク数 or 全タスク完了)",
+      "マッドスニッチ視点、インポスターであるプレイヤーの名前の色が赤色になる",
+      "インポスターからも視認できるがOnの場合、インポスター視点からマッドスニッチの色が赤くなる",
+      "他マッドメイトや[[バケネコ]]の色は赤くならない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%83%83%E3%83%89%E3%82%B9%E3%83%8B%E3%83%83%E3%83%81",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_SKMadmate",
+    "displayName": "サイドキックマッドメイト",
+    "team": "Madmate",
+    "description": "[[イビルトラッカー]]、[[マフィア]]等のサイドキック可能役職にサイドキックされた人がなる役職。\n\r\n元の役職の能力を失う。\n\r\nまた、勝利条件がインポスター陣営の勝利に変化する\n\r\nタスクが無くなる",
+    "abilities": [],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B5%E3%82%A4%E3%83%89%E3%82%AD%E3%83%83%E3%82%AF%E3%83%9E%E3%83%83%E3%83%89%E3%83%A1%E3%82%A4%E3%83%88",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_MadJester",
+    "displayName": "マッドジェスター",
+    "team": "Madmate",
+    "description": "クルーだがインポスターの味方をする\n\r\nインポスターと互いに認識できない\n\r\nタスクを全て完了させた状態で\n\r\n会議で追放された時にインポスター勝利できる。",
+    "abilities": [
+      "あ～した大荒れて～んき (タスク完了後、追放)",
+      "タスク完了後に自身が追放されると効果が発揮される。",
+      "インポスター陣営の勝利になる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%83%83%E3%83%89%E3%82%B8%E3%82%A7%E3%82%B9%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_MadTeller",
+    "displayName": "マッドテラー",
+    "team": "Madmate",
+    "description": "クルーだがインポスターの味方をする\n\r\nインポスターと互いに認識できない\n\r\nタスクを一定数完了させると占いが可能になり、\n\r\n会議で自投票すると占いモードに変更できる\n\r\n占いモードの状態で自身以外の誰かに投票すると投票先の役職を占うことができる\n\r\n自投票せずとも占えるように設定で変更が可能。",
+    "abilities": [
+      "貴方はご主人様...? (自投票→誰かに投票)",
+      "規定タスク完了後、占いモード中に誰かに投票することで発動",
+      "対象の役職を知ることができる",
+      "ただし、一定確率(占い成功率)で占いが失敗する",
+      "占い失敗時は「占い失敗」と表示され、回数が減少する"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%83%83%E3%83%89%E3%83%86%E3%83%A9%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_MadBait",
+    "displayName": "マッドベイト",
+    "team": "Madmate",
+    "description": "クルーだがインポスターの味方をする\n\r\nインポスターと互いに認識できない\n\r\nインポスター陣営以外の人にキルされた時、\n\r\n自身をキルした人に強制的にセルフレポートさせることができる",
+    "abilities": [
+      "ちょぉぉとまった! (キル時自動発動)",
+      "自身をキルしたプレイヤーに強制的にセルフレポートを行うことができる",
+      "キラーがインポスターまたは、[[狼少年]]の場合、",
+      "インポスターがキルしたら通報者をランダムにするがOnの場合だと、生存者からランダムに通報を行う",
+      "(※対象からインポスターを除外するがOnの場合、インポスターと[[狼少年]]は抽選に選ばれません)"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%83%83%E3%83%89%E3%83%99%E3%82%A4%E3%83%88",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_MadReduced",
+    "displayName": "マッドリデュース",
+    "team": "Madmate",
+    "description": "クルーだがインポスターの味方をする\n\r\nインポスターと互いに認識できない\n\r\n会議で自身以外の誰かに投票すると、\n\r\n投票先のプレイヤーの投票数を減らすことができる\n\r\n投票数の表示では減らず、次の会議時に投票数が減らされたことが知らされる。\n\r\n能力発動時は通常の投票はできない",
+    "abilities": [
+      "キミの票は頂いたっ!(自身,スキップ以外の誰かに投票)",
+      "投票相手の票数を一定数減らすことができる。",
+      "能力使用時、自身は通常の投票が出来ない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%83%83%E3%83%89%E3%83%AA%E3%83%87%E3%83%A5%E3%83%BC%E3%82%B9",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_MadAvenger",
+    "displayName": "マッドアベンジャー",
+    "team": "Madmate",
+    "description": "クルーだがインポスターの味方をする\n\r\nインポスターと互いに認識できない\n\r\n\r\n★革命会議発動条件★\n\r\n1.タスクを全て完了させている\n\r\n2.生存人数が一定数以上\n\r\n3.インポスターが全滅している\n\r\n\r\n以上の条件をすべて満たしている時、\n\r\nベントに入ることで革命会議を開くことができる\n\r\nただし、タスク完了後に、すべての条件を満たしていない状態でベントに入ると自殺してしまう(死因：自殺)\n\r\n\r\n革命会議では会議を開いたマッドアベンジャーのみが投票でき、\n\r\n投票で効果を発揮する役職の能力、[[ゲッサー]]能力を使う事はできない\n\r\n\r\n革命会議中、マッドアベンジャーが生存しているキル可能ニュートラル全員に投票することでインポスターが逆転勝利する\n\r\nただし、キル可能ニュートラルでないプレイヤーに投票すると自爆し(死因：誤爆)\n\r\n会議が終了する",
+    "abilities": [
+      "集え、革命の時間だ (革命会議発動条件をすべて満たし、ベントに入る)",
+      "革命会議を開くことができる。",
+      "タスク完了後、インポスターが全滅していない時にベントに入ると自爆する",
+      "死因：自殺",
+      "ｵﾏｴｶﾞﾔｯﾀﾝﾀﾞﾛｵｵｵｵｵ!!! (革命会議中誰かに投票)",
+      "投票相手がキル可能ニュートラルなら、おめでとう。革命成功にまた一歩近づいた。",
+      "キル可能ニュートラルではないなら、残念、革命失敗。代償として死んでもらう。(死因：誤爆)",
+      "生存しているキル可能ニュートラルを全て当てれたら、[[テロリスト]]と君だけ生き残って他は死ぬ。(死因：爆死)",
+      "そしたら、インポスターの勝利だ。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%83%83%E3%83%89%E3%82%A2%E3%83%99%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_MadWorker",
+    "displayName": "マッドワーカー",
+    "team": "Madmate",
+    "description": "クルーだがインポスターの味方をする\n\r\nインポスターと互いに認識できない\n\r\n生存中にタスクを全て完了させると、その時点でインポスター勝利できる",
+    "abilities": [
+      "ご主人!!船のネジ全部外しておきました!! (生存中にタスク全完了)",
+      "生存中にすべてタスクを完了させると、インポスター勝利"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%83%83%E3%83%89%E3%83%AF%E3%83%BC%E3%82%AB%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_MadTracker",
+    "displayName": "マッドトラッカー",
+    "team": "Madmate",
+    "description": "クルーだがインポスターの味方をする\n\r\nインポスターと互いに認識できない\n\r\nベントが使えない代わりにトラック能力を持つ\n\r\nタスクはない",
+    "abilities": [
+      "トラッキング (トラッカー能力)",
+      "バニラのトラック能力と一緒",
+      "能力使用相手の位置をマップ上で確認できる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%83%83%E3%83%89%E3%83%88%E3%83%A9%E3%83%83%E3%82%AB%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_MadChanger",
+    "displayName": "マッドチェンジャー",
+    "team": "Madmate",
+    "description": "クルーだがインポスターの味方をする\n\r\nインポスターと互いに認識できない\n\r\nキルボタンで対象を決めてから\n\r\nシェイプシフトを行うことで対象者二人の位置を入れ替えることができる\n\r\n対象者が同一人物,キルでの対象者を指定していない or 生存していないの場合は自身が対象となる\n\r\n\r\n対象者がテレポート出来ない状態であれば能力は発動されない",
+    "abilities": [
+      "チェンジ対象選択 (キルボタン)",
+      "キルボタンを押した対象をキルでの対象者にする",
+      "チェンジ！ (シェイプシフト)",
+      "変身相手とキルボタンでの対象の位置を入れ替える",
+      "対象者のどちらか一方が死亡済み、未選択の場合、もう一方と自身の位置を入れ替える",
+      "対象者のどちらかが特殊な位置にいる場合、能力は発動されない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%83%83%E3%83%89%E3%83%81%E3%82%A7%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_MadSuicide",
+    "displayName": "マッドスーサイド",
+    "team": "Madmate",
+    "description": "クルーだがインポスターの味方をする\n\r\nインポスターと互いに認識できない\n\r\n2つの自決能力を持つマッドメイト\n\r\nキルボタンを使用することでシェリフ誤爆のように自決する\n\r\n※他視点からはキルターゲットに殺されるがOnの場合、キルターゲット以外はキルターゲットがキルしたかのように見える\n\r\n\r\n[[ワンクリックボタン]]を使用することでその場で自決する",
+    "abilities": [
+      "自決 ([[ワンクリックボタン]])",
+      "その場で自決する。",
+      "死因は ワンクリボタン使用時の死因の設定値になる。",
+      "誤爆自決 (キルタボン)",
+      "その場で自決する。",
+      "他視点からはキルターゲットに殺されるがOnの場合、キルターゲット以外はキルターゲットに殺される。",
+      "死因は キルボタン使用時の死因の設定値になる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%83%83%E3%83%89%E3%82%B9%E3%83%BC%E3%82%B5%E3%82%A4%E3%83%89",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_MadHacker",
+    "displayName": "マッドハッカー",
+    "team": "Madmate",
+    "description": "クルーだがインポスターの味方をする。\n\r\nタスクターン中、シェイプシフト画面から死者の情報を得ることができる。\n\r\n設定によって死者の死体位置を得たり死者の死因を得る事もできる。\n\r\nインポスターのキルか確認できる設定有効時、×が\n\r\n赤=インポスター　灰=その他のキラー 橙=自殺等となる。",
+    "abilities": [
+      "特殊バイタル(シェイプシフト画面)",
+      "シェイプシフト画面や会議画面でで死体情報を確認できる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%83%83%E3%83%89%E3%83%8F%E3%83%83%E3%82%AB%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Bait",
+    "displayName": "ベイト",
+    "team": "Crewmate",
+    "description": "キルされた時に、自身をキルした人に\n\r\n強制的にセルフレポートさせることができる",
+    "abilities": [
+      "ﾍﾍｯﾜﾅﾆｶｶｯﾀﾅ!! (キル時自動発動)",
+      "キルした人に自身の死体をセルフレポートさせることができる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%99%E3%82%A4%E3%83%88",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Lighter",
+    "displayName": "ライター",
+    "team": "Crewmate",
+    "description": "条件を満たすと、自分の視野を広げることができる",
+    "abilities": [
+      "ﾋﾟｯｶｰｰﾝ (自動発動)",
+      "視界が広がる。",
+      "タスクを全て完了させると、停電の影響を受けない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%A9%E3%82%A4%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Mayor",
+    "displayName": "メイヤー",
+    "team": "Crewmate",
+    "description": "会議の票を複数持ち、まとめて一人またはスキップに入れることが出来る",
+    "abilities": [
+      "複数投票 (投票時自動発動)",
+      "会議の票数が1 + 追加投票の個数になる",
+      "臨時会議の時間だ (ベント使用時発動)",
+      "緊急会議を始める。",
+      "自身がボタンを押した判定になる(緊急ボタンの使用回数も減少)"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%A1%E3%82%A4%E3%83%A4%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_SabotageMaster",
+    "displayName": "サボタージュマスター",
+    "team": "Crewmate",
+    "description": "リアクター・O2・通信妨害を一人で修理可能\n\r\n停電は一か所のレバーに触れることで全て直る\n\r\nドアを開けるとその部屋の全てのドアが開く",
+    "abilities": [
+      "緊急修理はお手の物 (補足説明に記載している条件)",
+      "サボタージュを修復させる。",
+      "ドアを開けると、その部屋のドアが全て開く"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B5%E3%83%9C%E3%82%BF%E3%83%BC%E3%82%B8%E3%83%A5%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Sheriff",
+    "displayName": "シェリフ",
+    "team": "Crewmate",
+    "description": "インポスター陣営をキルすることができる\n\r\n※ニュートラルをキル可能にする設定有。\n\r\nクルーメイトをキルすると自殺する\n\r\nタスクはない",
+    "abilities": [
+      "執行！ (キルボタン使用時自動発動)",
+      "対象がインポスター陣営、設定でキル可能になっている陣営なら",
+      "キルを行うことができる。",
+      "クルーやキルが不可能な人をキルしようとすると自身が死亡する(死因：誤爆)",
+      "誤爆時、ターゲットも死ぬがONの場合、ターゲットの役職に関わらずキルを行い、",
+      "キル不可能な人をキルしていた場合、自身が死亡する(死因：誤爆)"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B7%E3%82%A7%E3%83%AA%E3%83%95",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Snitch",
+    "displayName": "スニッチ",
+    "team": "Crewmate",
+    "description": "タスク完了と同時にインポスターの名前の色が赤く表示される\n\r\n逆に自身のタスク残数が少なくなると名前の横に★が表示され、インポスターに暴かれる",
+    "abilities": [
+      "みぃつけた^^ (タスク全完了)",
+      "タスク全完了発動",
+      "インポスターの名前の色が赤く表示される"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B9%E3%83%8B%E3%83%83%E3%83%81",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_SpeedBooster",
+    "displayName": "スピードブースター",
+    "team": "Crewmate",
+    "description": "既定のタスク数を完了させると、\n\r\nランダムな生存者のスピードを上げることができる",
+    "abilities": [
+      "ブースト (規定タスク完了時)",
+      "ブースト対象がまだいない場合、",
+      "自身含む生存者の中からランダムに選ばれたプレイヤーの",
+      "移動速度を上昇させる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B9%E3%83%94%E3%83%BC%E3%83%89%E3%83%96%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Doctor",
+    "displayName": "ドクター",
+    "team": "Crewmate",
+    "description": "プレイヤーの死因を知ることができる(設定有)\n\r\nまた、充電がある限り、どこでもバイタルを確認できる",
+    "abilities": [
+      "死因調査 (自動発動)",
+      "死亡した人の名前の横に死因が表示される",
+      "心電図 (バイタル)",
+      "科学者のバイタルといっしょ"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%89%E3%82%AF%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Trapper",
+    "displayName": "トラッパー",
+    "team": "Crewmate",
+    "description": "キルされると、キルした人を数秒間移動不可にすることができる\n\r\n(設定有)",
+    "abilities": [
+      "ｶﾞﾁｬｺﾝ!! (キル時自動発動)",
+      "キルした人を一定時間移動不可、",
+      "通報不可にすることができる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%88%E3%83%A9%E3%83%83%E3%83%91%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Dictator",
+    "displayName": "ディクテーター",
+    "team": "Crewmate",
+    "description": "会議中に誰かに投票をすると、会議を強制終了させて自身の投票先を吊ることができる\n\r\n投票したタイミングでディクテーターは死ぬ。(死因：自殺)\n\r\n設定によって自投票してから誰かに入れないと効果発揮されないように変更が可能",
+    "abilities": [
+      "俺の言うことはゼッタイ (投票)",
+      "自身、スキップ以外の誰かに投票することで効果発動",
+      "投票先を吊ることができる。",
+      "使用後、自身は死亡する(死因：自殺)"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%87%E3%82%A3%E3%82%AF%E3%83%86%E3%83%BC%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Seer",
+    "displayName": "シーア",
+    "team": "Crewmate",
+    "description": "プレイヤーが死亡するごとに、シーア派キルフラッシュを見ることができる\n\r\n(設定有)",
+    "abilities": [
+      "ﾑﾑﾑｯ...! (誰かキルされた時発動)",
+      "誰かがキルされると発動する",
+      "自身にキルフラッシュが見える"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B7%E3%83%BC%E3%82%A2",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_TimeManager",
+    "displayName": "タイムマネージャー",
+    "team": "Crewmate",
+    "description": "タスクを終わらせる毎に会議時間が延びる\n\r\n死亡すると会議時間は元に戻る",
+    "abilities": [
+      "会議延長 (タスク1つ完了毎)",
+      "会議時間を伸びる会議時間の値分伸ばす"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%9E%E3%83%8D%E3%83%BC%E3%82%B8%E3%83%A3%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_VentMaster",
+    "displayName": "ベントマスター",
+    "team": "Crewmate",
+    "description": "クールダウン、持続時間無しで何度もベントに入ることができる\n\r\nまた、自身以外の誰かがベントに入ると、フラッシュを見ることができる",
+    "abilities": [
+      "開いたな? (誰かがベント使用時自動発動)",
+      "自身にフラッシュが見える(キルフラッシュと区別がつかない)"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%99%E3%83%B3%E3%83%88%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Bakery",
+    "displayName": "パン屋",
+    "team": "Crewmate",
+    "description": "パン屋が生存していると、\n\r\n会議開始時にパン屋生存コメントがチャット欄に表示される",
+    "abilities": [
+      "クルー!!今日のパンよ!! (会議時自動発動)",
+      "パン屋が生存していると会議開始時のメッセージに",
+      "パン屋が生存しているという通知が届く"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%91%E3%83%B3%E5%B1%8B",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_FortuneTeller",
+    "displayName": "占い師",
+    "team": "Crewmate",
+    "description": "吉のタスク数を完了した状態で\n\r\n会議で自投票すると、\n\r\n投票先の役職を占うことができる\n\r\n自投票せずとも占えるように設定で変更が可能",
+    "abilities": [
+      "水晶玉は嘘をつきません... (占いモード時に誰かに投票)",
+      "占い方法が自投票の時、規定タスク完了状態で自投票すると占いモードになる",
+      "占いモード中に誰かに投票するとその人の役職/陣営を占うことができる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E5%8D%A0%E3%81%84%E5%B8%AB",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_ToiletFan",
+    "displayName": "トイレファン",
+    "team": "Crewmate",
+    "description": "ベントに入ることでラウンジのトイレのドアを全て開くことができる\n\r\nそれだけ。",
+    "abilities": [
+      "ﾊﾟｯｶｰﾝ☆ (ベント使用)",
+      "AirShipのラウンジのトイレのドアが一斉に開く",
+      "他人からベントを使ったことが分からない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%88%E3%82%A4%E3%83%AC%E3%83%95%E3%82%A1%E3%83%B3",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_TaskStar",
+    "displayName": "タスクスター",
+    "team": "Crewmate",
+    "description": "タスクを全て完了させると、\n\r\n全員視点からタスクスターが誰か分かるようになる",
+    "abilities": [
+      "仕事...終わりましたっ (タスク全完了)",
+      "全員視点から自身がタスクスターと分かる",
+      "自身に付与されいるアドオンまでは分からない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%BF%E3%82%B9%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_PonkotuTeller",
+    "displayName": "ぽんこつ占い師",
+    "team": "Crewmate",
+    "description": "既定のタスク数を完了した状態で\n\r\n会議で自投票すると、占いモードに変更できる\n\r\n占いモードの状態で自身以外の誰かに投票すると、投票先の役職を占うことができる\n\r\nただし、一定確率で占いが失敗する\n\r\n占い失敗時、結果は死者、自身を含む全員からランダムなプレイヤーの役職が表示される\n\r\n\r\n自投票せずとも占えるように設定で変更が可能",
+    "abilities": [
+      "てへぺろ占い (＞  ☆)～ (占いモード時に誰かに投票)",
+      "占い方法が自投票の時、規定タスク完了状態で自投票すると占いモードになる",
+      "占いモード中に誰かに投票するとその人の役職/陣営を占うことができる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%81%BD%E3%82%93%E3%81%93%E3%81%A4%E5%8D%A0%E3%81%84%E5%B8%AB",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_UltraStar",
+    "displayName": "ウルトラスター",
+    "team": "Crewmate",
+    "description": "全員視点からウルトラスターが誰か分かる\n\r\nまた、ウルトラスターは速度が速く、0.5s間隔でスキンの色が変化する\n\r\nキルが出来るかが設定で変更が可能\n\r\nキルが可能な場合、一定時間が経過して最初にすれ違った人をキルする(ガードも貫通)\n\r\n\n\r\n誰か見つけたら体当たりで殺害だぁ!!!",
+    "abilities": [
+      "スーパースター (自動発動)",
+      "タスクターン中、自身の色が0.5s間隔で変わる",
+      "キル能力を持つがOnかつ一定時間が経過後、すれ違った人をキルする",
+      "キル後、クールはリセットされる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A6%E3%83%AB%E3%83%88%E3%83%A9%E3%82%B9%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_MeetingSheriff",
+    "displayName": "ミーティングシェリフ",
+    "team": "Crewmate",
+    "description": "既定のタスク数を完了した状態で\n\r\n会議で自投票すると政治執行モードに変更できる\n\r\n正義執行モードの状態で自身以外の誰かに投票すると\n\r\n投票先のプレイヤーに正義執行を行うことができる\n\r\n正義執行の対象がインポスター陣営の時、キルすることができる\n\r\n※ニュートラルをキル可能にする設定有\n\r\nクルーメイトを正義執行すると自殺する",
+    "abilities": [
+      "正義執行 (規定タスク完了かつ正義執行モード)",
+      "規定タスク完了した状態で自投票すると正義執行モードになる",
+      "正義執行モード中に誰かに投票すると正義執行を行う",
+      "ターゲットがインポスターであればキルを行う",
+      "ターゲットがクルーメイトなら自身が死亡する(死因：誤爆)"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9F%E3%83%BC%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%B7%E3%82%A7%E3%83%AA%E3%83%95",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_GuardMaster",
+    "displayName": "ガードマスター",
+    "team": "Crewmate",
+    "description": "タスクを完了させると設定回数キルをガードできる\n\r\nまた、いつキルをガードしたか分かる。",
+    "abilities": [
+      "ｱﾌﾞﾈｪｯ!! (キルされそうになった時自動発動)",
+      "キルをガードする",
+      "自身の殺害未遂者を知ることができるがOnの場合、キルをガードしたことが分かり",
+      "キラーの名前に色が付く"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%AC%E3%83%BC%E3%83%89%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Shyboy",
+    "displayName": "シャイボーイ",
+    "team": "Crewmate",
+    "description": "視界内に誰かがいるとベントクールが(1秒に1カウント)減少し、\n\r\n誰もいないと(4sで1カウント)回復する\n\r\nベントクールが残り0秒になると、\n\r\n発作を起こして死亡してしまう",
+    "abilities": [
+      "...ち..ちょっ...近づか...な..い..d (常時発動)",
+      "視界内に誰かがいるとベントクールが減少する",
+      "ベントクールが残り0秒になると死亡する(死因：自殺)",
+      "誰もいないとちょっとずつベントクールが回復する"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B7%E3%83%A3%E3%82%A4%E3%83%9C%E3%83%BC%E3%82%A4",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Balancer",
+    "displayName": "天秤",
+    "team": "Crewmate",
+    "description": "会議で自投票すると、天秤モードに変更される\n\r\n天秤モードの状態で2人に投票すると天秤会議が始まり、\n\r\n投票先の2人を天秤に掛けることができる\n\r\n天秤会議では天秤に掛けられた2人のみへ投票することができ、\n\r\n無投票で時間切れになった場合は自動でどちらかに投票される\n\r\n同数票の場合はどちらも追放される\n\r\n天秤会議は1度のみ使用可能",
+    "abilities": [
+      "天秤投票 (自投票後、2名に投票)",
+      "投票した2名で天秤会議を行う。",
+      "生存者全員2名のどちらかに投票しなければならない",
+      "同数票なら両者追放される"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E5%A4%A9%E7%A7%A4",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_ShrineMaiden",
+    "displayName": "巫女",
+    "team": "Crewmate",
+    "description": "既定のタスク数を完了した状態で会議で自投票すると、占いモードに変更できる\n\r\n占いモードの状態で自身以外の誰かに投票すると、\n\r\n投票先のプレイヤーとそのターンで通報された死体のプレイヤーが同陣営なのか占うことができる\n\r\n通報された死体が無ければ能力を使用できない",
+    "abilities": [
+      "あの子の声が... (死体通報で会議が始まった時かつ占いモード中に対象に投票)",
+      "通報された死体のプレイヤーと占い相手が同陣営なのか占う。",
+      "ボタンでの会議や規定タスク数を完了させていない状態だと能力が使えない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E5%B7%AB%E5%A5%B3",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Comebacker",
+    "displayName": "カムバッカー",
+    "team": "Crewmate",
+    "description": "ベントに入ることで前回入ったベントの位置へテレポートできる\n\r\nベントに入ったのが初回の時はテレポートされない\n\r\nベント内に潜ることや通常のベント移動はできない",
+    "abilities": [
+      "ｶﾑﾊﾞｰｰｰｰｯｸ!!! (ベント使用)",
+      "前回のベントにテレポートされる",
+      "テレポート後、すぐにベントから出てくる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%AB%E3%83%A0%E3%83%90%E3%83%83%E3%82%AB%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_WhiteHacker",
+    "displayName": "ホワイトハッカー",
+    "team": "Crewmate",
+    "description": "既定のタスク数を完了すると、誰かにGPSを仕掛けることが出来るようになる\n\r\n会議で自身以外の誰かに投票することで投票先のプレイヤーにGPSを仕掛けることができ、\n\r\n次ターンの最終位置を特定することができる\n\r\nただし、対象が死亡すると特定できない",
+    "abilities": [
+      "GPSを仕掛けたのさっ！ (投票)",
+      "投票相手のタブレットをハッキングし、",
+      "次ターン投票相手の最終位置が名前の下に表示される",
+      "投票はキャンセルされず、そのまま通常投票として扱われる",
+      "トラッキング (トラッカー能力)",
+      "トラッカーのトラック能力。",
+      "トラッカーの能力が使えるがOnかつ自覚済みの時に使用可能"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%8F%E3%83%83%E3%82%AB%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Fortuner",
+    "displayName": "フォーチュナー",
+    "team": "Crewmate",
+    "description": "タスクを全て完了させた後、キルボタンが使用できるようになる。\n\r\nキルボタンを使用した相手に次会議開始時、ランダムで属性を付与する。\n\r\n\n\r\n'1回使用で属性を1つ渡す'がON、または上書きする付与属性が未設定の場合は、ランダムで1つ。\n\r\nそれ以外の場合は設定した属性が全て付与される。",
+    "abilities": [
+      "貴方に幸あれ(キルボタン)",
+      "キルの対象者に次の会議のタイミングで属性を付与する。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%95%E3%82%A9%E3%83%BC%E3%83%81%E3%83%A5%E3%83%8A%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_WolfBoy",
+    "displayName": "狼少年",
+    "team": "Crewmate",
+    "description": "クルー陣営だが、すべてのプレイヤーを殺すことができる\n\r\nただし、大狼をキルしようとすると返り討ちにあってしまう\n\r\nインポスターを除く他の役職からは狼少年ではなくインポスターとして処理される\n\r\nタスクはない",
+    "abilities": [
+      "狼一族の教え (キル)",
+      "[[大狼]]を除く全てプレイヤーをキルすることが可能",
+      "狼一族の振舞 (常時発動)",
+      "[[占い師]]等一部役職からインポスターとして処理されてしまう"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E7%8B%BC%E5%B0%91%E5%B9%B4",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_NiceAddoer",
+    "displayName": "ナイスアドナー",
+    "team": "Crewmate",
+    "description": "ナイスアドナー専用で属性が付与される\n\r\n同じ属性が重複している場合、重複した属性はナイスアドナーの設定が優先される",
+    "abilities": [],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%8A%E3%82%A4%E3%82%B9%E3%82%A2%E3%83%89%E3%83%8A%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_InSender",
+    "displayName": "インセンダー",
+    "team": "Crewmate",
+    "description": "キルされた時に自身が自身の死体をレポートする。",
+    "abilities": [
+      "簡単には死なないねっ! (キル時自動発動)",
+      "キルされた時、自分の死体を自分で通報する"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A4%E3%83%B3%E3%82%BB%E3%83%B3%E3%83%80%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Staff",
+    "displayName": "スタッフ",
+    "team": "Crewmate",
+    "description": "スタッフが生存中にタスクを終えていない状態で試合が終了した場合、\n\r\nスタッフはクルーメイト陣営として勝利することができない\n\r\nスタッフのタスクはクルーメイトのタスクには含まれない\n\r\nベントを使用することが出来る(設定有)",
+    "abilities": [
+      "これで僕もクルーメイトの一員だ! (タスク全完了)",
+      "タスクを全完了すると、クルーメイトが勝利した時、自身も勝利できる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B9%E3%82%BF%E3%83%83%E3%83%95",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_SwitchSheriff",
+    "displayName": "スイッチシェリフ",
+    "team": "Crewmate",
+    "description": "ベントに入ることでタスクモードとシェリフモードを切り替えることができる\n\r\nタスクモード中はシェリフのキル能力が使用できない\n\r\nシェリフモードではタスクが行えない",
+    "abilities": [
+      "モードチェンジ (ベント使用時)",
+      "現在のモードがSheriffならtaskモードに",
+      "taskモードならSheriffモードに変更する",
+      "通信妨害中はtaskモードからSheriffモードへの変更はできない",
+      "正義執行！ (キルボタン使用時自動発動)",
+      "対象がインポスター陣営、設定でキル可能になっている陣営なら",
+      "キルを行うことができる。",
+      "クルーやキルが不可能な人をキルしようとすると自身が死亡する(死因：誤爆)",
+      "誤爆時、ターゲットも死ぬがONの場合、ターゲットの役職に関わらずキルを行い、",
+      "キル不可能な人をキルしていた場合、自身が死亡する(死因：誤爆)"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B9%E3%82%A4%E3%83%83%E3%83%81%E3%82%B7%E3%82%A7%E3%83%AA%E3%83%95",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_NiceLogger",
+    "displayName": "ナイスロガー",
+    "team": "Crewmate",
+    "description": "[[ワンクリックボタン]]を使用することで、\n\r\n一番近くにあるドアにセンサーを設置することができる\n\r\nセンサーを設置したドアの付近にいるプレイヤーを検知し、\n\r\n会議時に通知を受け取ることが可能。\n\r\n会議後、センサーは再設置する必要がある\n\r\nセンサーがプレイヤーを検知すると、次の検知までに一定時間クールタイムが発生する",
+    "abilities": [
+      "ドアログ設置 ([[ワンクリックボタン]])",
+      "一番近くのドアにドアログセンサーを設置することができる。",
+      "MIRAのドアログのように動く。",
+      "検知後、一定時間クールダウンが発生する"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%8A%E3%82%A4%E3%82%B9%E3%83%AD%E3%82%AC%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Android",
+    "displayName": "アンドロイド",
+    "team": "Crewmate",
+    "description": "タスクを行うことでバッテリーをチャージすることができる\n\r\nバッテリー残量によって、ベントクールダウン、ベント内での最大時間が変動する\n\r\nサボタージュの発動中はベントに入る事が出来ない\n\r\n100%以上に充電されることはない",
+    "abilities": [
+      "ジューデン (タスク1つ完了毎発動)",
+      "バッテリーがチャージされる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A2%E3%83%B3%E3%83%89%E3%83%AD%E3%82%A4%E3%83%89",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Psychic",
+    "displayName": "サイキック",
+    "team": "Crewmate",
+    "description": "誰かがキルされるごとに、サイキックはノイズメーカーのノイズを受けとることができる",
+    "abilities": [
+      "君の思いが伝わったよ... (自動発動)",
+      "誰かがキルされると自視点にノイズメーカーの通知が届く"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B5%E3%82%A4%E3%82%AD%E3%83%83%E3%82%AF",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Efficient",
+    "displayName": "エフィシェンシー",
+    "team": "Crewmate",
+    "description": "他のクルー役職よりタスクが多いが、\n\r\nタスクを完了させると一定確率でもう一つタスクが完了する\n\r\n効率化成功時、守護天使のバリアが自身に見える\n\r\n能力発動後、3秒間のクールタイムが発生する",
+    "abilities": [
+      "効率化 (タスク完了かつ一定確率で発動)",
+      "タスク完了カウントをもう一つ増加させる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A8%E3%83%95%E3%82%A3%E3%82%B7%E3%82%A7%E3%83%B3%E3%82%B7%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_King",
+    "displayName": "君臨者",
+    "team": "Crewmate",
+    "description": "基本死亡しないが、死亡した時、クルー陣営に大きな損害をもたらす\n\r\n通常キル、多くの特殊キルでも死亡しない\n\r\nただし、会議で一定数票が集まってしまうと自身が追放されてしまう\n\r\nクルー陣営には自信が君臨者であることが分かっているが、人外には分からない\n\r\n君臨者には[[天邪鬼]]、[[アムネシア]]が付与されない",
+    "abilities": [
+      "我を称えよ (常時発動)",
+      "クルー陣営視点、自身の役職が見える",
+      "アドオンまでは見えない",
+      "どうすれば... (死亡時発動)",
+      "死亡時[[天邪鬼]]含む、クルーメイト陣営であるプレイヤーへ",
+      "① 死亡時後追いする人数の設定人数分死亡する(死因：後追いした者の死因の設定値)",
+      "② 死亡時、バフ属性が剥奪される人数の設定人数分バフ属性が剥奪される",
+      "③ 死亡時、役職がクルーになる人数の設定人数分役職がクルーメイトになってしまう"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E5%90%9B%E8%87%A8%E8%80%85",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_AmateurTeller",
+    "displayName": "かけだし占い師",
+    "team": "Crewmate",
+    "description": "規定のタスク数を完了した状態で\n\r\n会議で自投票すると、占いモードに変更できる。\n\r\n占いモードの状態で、自身以外の誰かに投票すると\n\r\n投票先の役職を占うことができる\n\r\n占いには1ターンかかり、対象者が人外の場合、占われていることが分かってしまう。\n\r\n1会議で1人までしか占えない",
+    "abilities": [
+      "あれっ...これっ?なに? (占いモード時に誰かに投票)",
+      "占い方法が自投票の時、規定タスク完了状態で自投票すると占いモードになる",
+      "占いモード中に誰かに投票するとその人の役職/陣営を占うことができる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%81%8B%E3%81%91%E3%81%A0%E3%81%97%E5%8D%A0%E3%81%84%E5%B8%AB",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Gasp",
+    "displayName": "ギャスプ",
+    "team": "Crewmate",
+    "description": "タスクを一定数完了させ、\n\r\n誰かにキルされると\n\r\n次会議が始まるまでキラーの名前に★マークがつく\n\r\n死体が残らない死に方をした場合でもマークがつく",
+    "abilities": [
+      "ｷﾞｬｱｱｱｱｱｱｱｱｱｱｱｱｱｱｱｱ (キル時自動発動)",
+      "次会議が始まるまで、キラーの名前に★マークがつく"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%AE%E3%83%A3%E3%82%B9%E3%83%97",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Stolener",
+    "displayName": "ストルナー",
+    "team": "Crewmate",
+    "description": "自身がキルされると、\n\r\n設定で付与している属性がキラーに付与される\n\r\n自身が属性を使えるかは設定による",
+    "abilities": [
+      "盗まれちゃった(´・ω・｀) (キル時自動発動)",
+      "キルしてきた相手に属性が付与される"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B9%E3%83%88%E3%83%AB%E3%83%8A%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Snowman",
+    "displayName": "雪だるま",
+    "team": "Crewmate",
+    "description": "たくさん歩くと雪が落ち、視界がだんだん狭くなる。\n\r\nまた、ずっと立ち止まってると、雪が溶け視界が狭くなる。\n\r\n(歩く方が雪の消費を抑えられる)\n\r\n\n\r\nタスクをすべて終えると、溶けなくなり視界が狭まらなくなる。",
+    "abilities": [
+      "雪溶け (移動時)",
+      "移動すると少しずつ雪が溶けていく。",
+      "立ち止まるとそこそこ雪が溶ける"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E9%9B%AA%E3%81%A0%E3%82%8B%E3%81%BE",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_VentOpener",
+    "displayName": "ベントオープナー",
+    "team": "Crewmate",
+    "description": "タスクを一定数完了させた後、\n\r\nベントに入ることで、ベントに入っている\n\r\n全プレイヤーをベントから追い出すことができる。",
+    "abilities": [
+      "オープン！(ベントに入る)",
+      "ベントに入ろうとするとそのベントにいるプレイヤーを",
+      "強制的に排出させる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%99%E3%83%B3%E3%83%88%E3%82%AA%E3%83%BC%E3%83%97%E3%83%8A%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_VentHunter",
+    "displayName": "ベントハンター",
+    "team": "Crewmate",
+    "description": "タスクを一定数完了させた後、\n\r\nベントに入ることで、入ったベントに罠を仕掛けることができる\n\r\n罠は設定した時間経過すれば消えるが、\n\r\nその罠の仕掛けられたベントに入ってしまうと死んでしまう\n\r\nまた、罠を仕掛ける時ベント内にキル可能役職がいた場合、\n\r\n罠を仕掛けるのに失敗し、陣営関係なく返り討ちにされる。",
+    "abilities": [
+      "トラップ設置(ベント)",
+      "ベントに入ろうとすることで",
+      "そのベントにトラップをしかけることができる",
+      "ただし、ベント内にキル可能人外がいる場合、自身が返り討ちにあう(死因：返り討ち)",
+      "トラップの設置されたベントを使ったプレイヤーは死亡する(死因：トラップ)"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%99%E3%83%B3%E3%83%88%E3%83%8F%E3%83%B3%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Satellite",
+    "displayName": "サテライト",
+    "team": "Crewmate",
+    "description": "設定されたタスク数を完了した状態で会議で自投票すると「探知」モードに変更できる。\n\r\n「探知」モードで自身以外の誰かに投票すると、会議前、その人が入ったことのある部屋を1つ確認できる。\n\r\n通信妨害中、行動は観測されず、「観測」モードも使用できない。",
+    "abilities": [
+      "衛星探知通信(自投票 → 投票)",
+      "投票相手がこのターン中に通った部屋を1つだけランダムで教えてくれる。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B5%E3%83%86%E3%83%A9%E3%82%A4%E3%83%88",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Walker",
+    "displayName": "ウォーカー",
+    "team": "Crewmate",
+    "description": "通常のタスクの他に、特定の部屋に行くというタスクが追加される。\n\r\n特定の部屋に行くタスクも通常のタスクも、クルーメイト勝利のカウントに含まれる。",
+    "abilities": [
+      "船の点検...(タスク追加)",
+      "部屋に行くタスク数の分だけ",
+      "特定の部屋に行くタスクが加算される。",
+      "このタスクもクルーのタスク勝利に加算される。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AB%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_AllArounder",
+    "displayName": "オールラウンダー",
+    "team": "Crewmate",
+    "description": "ターン毎に設定された確率に応じて、様々な役職や能力に変化する。\n\r\n\n\r\nマッドメイト、オポチュニストの場合、そのターンの間タスクは勝利カウントに計算されない。\n\r\n\n\r\n基本通信妨害中は能力が使用できない",
+    "abilities": [
+      "なんでもやります！ (自動発動)",
+      "ランダムで能力が変わる。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%AA%E3%83%BC%E3%83%AB%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%80%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Inspector",
+    "displayName": "捜査官",
+    "team": "Crewmate",
+    "description": "会議で自投票すると捜査モードに変更できる。\n\r\n捜査モードの状態で誰かに投票するとその人の事を次のターンの間、捜査することができる。\n\r\n\n\r\n捜査相手が死亡すると、捜査相手や捜査相手を殺した犯人についての情報を手に入れることができる。\n\r\n\n\r\n会議が始まると捜査はリセットされる。\n\r\nまた、複数人同時捜査はできない。",
+    "abilities": [
+      "捜査 (自投票→投票)",
+      "調査モード中にプレイヤーに投票すると",
+      "投票相手を調査することができる。",
+      "調査相手が次ターン死亡すると次会議で犯人、捜査相手の情報が手に入れられる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E6%8D%9C%E6%9F%BB%E5%AE%98",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_CandleLighter",
+    "displayName": "キャンドルライター",
+    "team": "Crewmate",
+    "description": "視界がろうそくのようにだんだんと小さく狭くなっていく。\n\r\nただ、他人と違いろうそくで周りを灯している為、停電の影響は受けない。\n\r\nタスクを全て完了させると新たに一本ろうそくが供給され、\n\r\n一番明るい状態に点け直すことができる。",
+    "abilities": [
+      "命の灯(常時発動)",
+      "視界がろうそくのように時間経過で狭くなっていく。",
+      "停電の影響は受けない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%AD%E3%83%A3%E3%83%B3%E3%83%89%E3%83%AB%E3%83%A9%E3%82%A4%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Express",
+    "displayName": "エクスプレス",
+    "team": "Crewmate",
+    "description": "ただ足が速い。",
+    "abilities": [
+      "列車通過(常時発動)",
+      "足が速くなる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A8%E3%82%AF%E3%82%B9%E3%83%97%E3%83%AC%E3%82%B9",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Observer",
+    "displayName": "観察者",
+    "team": "Crewmate",
+    "description": "会議で誰かに投票する事で投票相手を「監視対象」にする。\n\r\n監視対象が死亡した時、全員にキルフラッシュが発生する。",
+    "abilities": [
+      "観察(投票)",
+      "投票相手の事を監視する。",
+      "監視対象が死亡すると、全員にキルフラッシュが発生する"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E8%A6%B3%E5%AF%9F%E8%80%85",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Analyzer",
+    "displayName": "アナライザー",
+    "team": "Crewmate",
+    "description": "一定タスクを完了させた後に、陣営毎に指定されているベントに入ることで、\n\r\n会議開始時に、その陣営の生存人数を確認することができる。\n\r\nマッドメイトはクルーとしてカウントされ、生存カウントに含まれない役職はカウントされない。\n\r\n陣営事の指定ベントは色付き矢印で表示されている。(Ⓘ:インポスター Ⓒ:クルー Ⓝ:第三陣営)",
+    "abilities": [
+      "陣営人数確認(ベント)",
+      "陣営毎に指定されたベントに入ろうとすると、",
+      "次の会議でその陣営の残り人数を確認することができる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A2%E3%83%8A%E3%83%A9%E3%82%A4%E3%82%B6%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Arsonist",
+    "displayName": "アーソニスト",
+    "team": "Neutral",
+    "description": "キルボタンを使おうとすると、ターゲットに油を塗れる\n\r\n全てのクルーに油を塗ったら、船を燃やして勝利する",
+    "abilities": [
+      "油塗り塗り (キルし、一定時間ターゲットのそばにいる)",
+      "キルし、△マークがついているプレイヤーに",
+      "一定時間の間近づくと▲になり油を塗れる",
+      "放火 (自身以外の生存者全てに油を塗る)",
+      "放火し、自身以外全員死亡(死因：焼死)する",
+      "放火が行われた後、アーソニストの勝利となる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A2%E3%83%BC%E3%82%BD%E3%83%8B%E3%82%B9%E3%83%88",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Jester",
+    "displayName": "ジェスター",
+    "team": "Neutral",
+    "description": "会議で追放された時に単独勝利できる\n\r\n追放されず、試合が終了orキルされると敗北",
+    "abilities": [
+      "あ～したてんきになぁれ (追放時)",
+      "ジェスターの勝利"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B8%E3%82%A7%E3%82%B9%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Terrorist",
+    "displayName": "テロリスト",
+    "team": "Neutral",
+    "description": "自身のタスクを全て完了させた状態で\n\r\nキル・追放された時に単独勝利する",
+    "abilities": [
+      "テロ (タスク完遂後、キル・追放される)",
+      "テロリストの勝利になる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%86%E3%83%AD%E3%83%AA%E3%82%B9%E3%83%88",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Executioner",
+    "displayName": "エクスキューショナー",
+    "team": "Neutral",
+    "description": "ターゲットに対してこちらかのみ視認できる♦のマークがついている\n\r\n投票で♦が付いている人を追放すれば、単独勝利\n\r\nターゲットがキルされた場合は役職が変化する\n\r\nターゲットが[[ジェスター]]の時、追放成功時追加勝利する",
+    "abilities": [],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A8%E3%82%AF%E3%82%B9%E3%82%AD%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_SchrodingerCat",
+    "displayName": "シュレディンガーの猫",
+    "team": "Neutral",
+    "description": "キルされると、キルを防いでキルしてきた陣営に所属する",
+    "abilities": [
+      "にゃお～ん (キルされそうになった時)",
+      "一部特殊キルではない時、その時のみキルをガードし、",
+      "キルをしてきた人の陣営に所属する"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B7%E3%83%A5%E3%83%AC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%AC%E3%83%BC%E3%81%AE%E7%8C%AB",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Opportunist",
+    "displayName": "オポチュニスト",
+    "team": "Neutral",
+    "description": "試合終了時に生存していれば追加勝利となる",
+    "abilities": [],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%AA%E3%83%9D%E3%83%81%E3%83%A5%E3%83%8B%E3%82%B9%E3%83%88",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Egoist",
+    "displayName": "エゴイスト",
+    "team": "Neutral",
+    "description": "味方が全て死んだ状態でインポスターが勝つと単独勝利する\n\r\nインポスターは誰がエゴイストか分かる\n\r\nエゴイストも誰がインポスターか分かる\n\r\n(設定有)",
+    "abilities": [
+      "マッドメイト作成 (シェイプ時自動発動)",
+      "一番近い人を[[サイドキックマッドメイト]]にする。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A8%E3%82%B4%E3%82%A4%E3%82%B9%E3%83%88",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Lovers",
+    "displayName": "ラバーズ",
+    "team": "Neutral",
+    "description": "全プレイヤーの中からランダムで2人に他の役職と重複して配役されるニュートラル\n\r\nラバーズが2人とも生き残っている状態で試合が終了すれば勝利\n\r\nまあ、生存者がラバーズの2人のみの場合、追加勝利設定でも単独勝利する\n\r\nラバーズの片方が死亡した場合、もう片方も死亡する(死因：後追い)\n\r\n単独勝利する設定の場合、クルーのタスクが完了すると敗北する\n\r\n\r\n勝利優先順位は以下の表参照",
+    "abilities": [],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%A9%E3%83%90%E3%83%BC%E3%82%BA",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_OneLove",
+    "displayName": "片思い",
+    "team": "Neutral",
+    "description": "他の役職と重複して配役されるニュートラル\n\r\nとある人に恋心を抱いている\n\r\n片思いと想い人がどちらも生き残っている状態で試合が終了すれば、\n\r\n想い人との恋が実り、一緒に勝利できる\n\r\nまた、生存者が片思いと想い人の2人のみの場合、追加勝利設定でも単独勝利となる\n\r\n\r\n想い人が死亡すると片思いは死亡(死因：後追い)するが、\n\r\n片思いが死亡しても想い人は死亡しない\n\r\n想い人にラバーズは配役されない\n\r\n\r\n一定確率で片思いが2人に配役さ®、両片思いになる時がある\n\r\n\r\n追加勝利ではないラバーズが複数組生き残っている場合、勝利できるラバーズの優先順位が決まっている\n\r\n※[[ラバーズ]]のページ参照",
+    "abilities": [
+      "■ この試合が終わったら私...告白するんだっ!!",
+      "ゲーム終了時に片思い,想い人が両生存していれば勝利",
+      "想い人が死亡した場合、片思いは死亡する(死因：後追い)"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E7%89%87%E6%80%9D%E3%81%84",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Jackal",
+    "displayName": "ジャッカル",
+    "team": "Jackal",
+    "description": "ジャッカルはすべてのプレイヤーを殺すことができる\n\r\nインポスターが残っておらず、生き残っているジャッカルの人数が、\n\r\nクルーと同じかそれ以上でジャッカルが勝利する\n\r\n\r\nサイドキックが作成できる場合、キルボタンが光っている状態で[[ワンクリックボタン]]を押すと、\n\r\nその時のキルターゲットを[[ジャッカルドール]]にする",
+    "abilities": [
+      "サイドキック ([[ワンクリックボタン]])",
+      "発動時のキルターゲットを[[ジャッカルドール]]にする"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B8%E3%83%A3%E3%83%83%E3%82%AB%E3%83%AB",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_PlagueDoctor",
+    "displayName": "ペスト医師",
+    "team": "Neutral",
+    "description": "ペスト医師はすべてのプレイヤーに感染を広げることが目的。\n\r\n\r\nキルで最初の感染者を選ぶ。\n\r\n接触感染して良き、すべてのプレイヤーに感染させたら勝利\n\r\n会議では感染はリセットされない",
+    "abilities": [
+      "感染 (感染可能回数が残っており、(キル時 / 自身がキルされ、キルされた時に感染させるがOn))",
+      "対象を100%感染させる",
+      "感染拡大 (自動発動)",
+      "100%感染しているプレイヤーの一定範囲内にいるプレイヤーが徐々に感染していく"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9A%E3%82%B9%E3%83%88%E5%8C%BB%E5%B8%AB",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Remotekiller",
+    "displayName": "リモートキラー",
+    "team": "Neutral",
+    "description": "リモートキラーはすべてのプレイヤーを殺すことができる\n\r\nキルボタンで対象を決め、ベントに入ると対象を遠隔でキル出来る\n\r\n普通のキルを行うことはできない\n\r\n生存者の半数以上がリモートキラーかつ、他の生存者が無害な役職の場合、\n\r\nリモートキラーの勝利となる",
+    "abilities": [
+      "遠隔キル (キルでターゲット選択後、ベント)",
+      "ターゲットがその場で死亡する",
+      "キル時にテレポートするがOnの場合、使用後キルワープが発生します"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%AA%E3%83%A2%E3%83%BC%E3%83%88%E3%82%AD%E3%83%A9%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_JackalMafia",
+    "displayName": "ジャッカルマフィア",
+    "team": "Jackal",
+    "description": "初期状態ではキルが封じられている\n\r\nジャッカルカウントの役職が自身以外に生存していないと自身もキルが可能になる\n\r\n仕様は[[ジャッカル]]と同様。\r\n\r\nサイドキックが作成できる場合、キルボタンが光っている状態で[[ワンクリックボタン]]を押すと、\n\r\nその時のキルターゲットを[[ジャッカルドール]]にする",
+    "abilities": [
+      "潜伏 (常時発動)",
+      "仲間の生存人数が設定人数以下でなく、設定ターンも経過してない状態",
+      "キルが行えない。",
+      "サイドキック ([[ワンクリックボタン]])",
+      "発動時のキルターゲットを[[ジャッカルドール]]にする"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B8%E3%83%A3%E3%83%83%E3%82%AB%E3%83%AB%E3%83%9E%E3%83%95%E3%82%A3%E3%82%A2",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_JackalWolf",
+    "displayName": "ジャッカルウルフ",
+    "team": "Jackal",
+    "description": "ジャッカルウルフはすべてのプレイヤーを殺すことができる。\n\r\nまた、設定されているインポスターの能力を併せて持つことができる。\n\r\nインポスターが残っておらず、生き残っているジャッカルの人数がクルーと同じかそれ以上でジャッカルが勝利する。",
+    "abilities": [],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B8%E3%83%A3%E3%83%83%E3%82%AB%E3%83%AB%E3%82%A6%E3%83%AB%E3%83%95",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Chef",
+    "displayName": "シェフ",
+    "team": "Neutral",
+    "description": "キルボタンを使ってその人に料理を渡せる\n\r\n全員に料理を渡した状態で吊られると単独勝利、\n\r\nまた、ゲーム終了時、生存していると追加勝利になる",
+    "abilities": [
+      "料理提供 (キル)",
+      "キルボタンのターゲットに料理を渡すことができる",
+      "既に料理を渡した人に再度料理を渡すことはできない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B7%E3%82%A7%E3%83%95",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_CountKiller",
+    "displayName": "カウントキラー",
+    "team": "Neutral",
+    "description": "カウントキラーはすべてのプレイヤーを殺すことができる\n\r\n設定回数キルすると単独勝利できる。",
+    "abilities": [
+      "後何人かな? (指定回数キル)",
+      "キルに成功すると、勝利に必要なキルカウントが1つ増える",
+      "キルがガードされた場合、キルカウントは増えない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%82%AD%E3%83%A9%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_GrimReaper",
+    "displayName": "死神",
+    "team": "Neutral",
+    "description": "【勝利条件】～以下のどちらかを満たせば死神の単独勝利～\n\r\n① 生存者がインポスター1人、死神1人、クルーカウントの役職が0人\n\r\n② 死神生存かつ他の有害なキル役職が全滅\n\r\n\r\n死神はキルボタンを押すことで1ターンに1人まで呪うことができる\n\r\n呪われた人は会議開始と同時に死亡する\n\r\nただし、死神がそのターンに死亡すれば会議開始以降も生存する\n\r\n死神は死体通報が出来ず、生存人数にカウントされない",
+    "abilities": [
+      "連れ去り (キルでターゲット選択し、会議開始)",
+      "キルで選択したターゲットを天界に連れ去る",
+      "連れ去られた人はキルガード貫通で死亡する(死因：他界)"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E6%AD%BB%E7%A5%9E",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Madonna",
+    "displayName": "マドンナ",
+    "team": "Other",
+    "description": "会議で自投票すると告白モードに変更できる\n\r\n告白モードの状態で自身以外の誰かに投票すると\n\r\n投票先のプレイヤーに告白することができる\n\r\n相手が[[ラバーズ]]、[[片思い]]、片思いの想い人のいずれかでなければ告白が成功し\n\r\n相手とマドンナラバーズになれる\n\r\n告白が成功しなかった場合、ラバーズにはなれない。\n\r\n告白失敗時は役職が変化する\n\r\nマドンナにラバーズは配役されない",
+    "abilities": [
+      "ずっと...あなたの事がっ...!! (自投票 → 彼ぴっぴに投票)",
+      "彼ぴっぴが[[ラバーズ]],[[片思い]],片思いの想い人でない場合",
+      "彼ぴっぴと自身がマドンナラバーズになる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%83%89%E3%83%B3%E3%83%8A",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Amanojaku",
+    "displayName": "天邪鬼",
+    "team": "Neutral",
+    "description": "設定日数目の会議終了後、生存しているクルー/ニュートラル役職のプレイヤーの中から\n\r\nランダムに他の役職と重複して配役されるニュートラル\n\r\nクルー陣営が敗北すれば追加勝利\n\r\nただし、クルー陣営が勝利すると敗北する",
+    "abilities": [],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E5%A4%A9%E9%82%AA%E9%AC%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Workaholic",
+    "displayName": "ワーカホリック",
+    "team": "Neutral",
+    "description": "クルーよりもタスクが多い。\n\r\n生存中にタスクを全て完了することで単独勝利できる\n\r\n死亡後にタスクを全て完了しても勝利できない",
+    "abilities": [
+      "タスクタスクゥ～! (タスク完遂)",
+      "生存中にタスク完遂するとワーカホリックの勝利"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%AF%E3%83%BC%E3%82%AB%E3%83%9B%E3%83%AA%E3%83%83%E3%82%AF",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Monochromer",
+    "displayName": "モノクラー",
+    "team": "Neutral",
+    "description": "最後まで生存しているかつ、クルー陣営が勝利すると勝利できる\n\r\nタスク勝利だと自身も追加、それ以外だと乗っ取り勝利する\n\r\nタスクターン中、モノクラーからのみ、他のプレイヤー全員([[ウルトラスター]]除く)のスキンが\n\r\nグレーになり、識別できなくなる\n\r\nグレーではなく白、黒で表示するように設定で変更が可能\n\r\n白、黒表示では元々のスキンの色で分けられており、下記記載の色変化表のとおりである",
+    "abilities": [
+      "モノクロ化 (タスクターン中常時発動)",
+      "他プレイヤーの色がグレーに見える",
+      "スキンを白と黒に分けるがOnの場合、色変化表に応じて色が変化する"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%A2%E3%83%8E%E3%82%AF%E3%83%A9%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Jackaldoll",
+    "displayName": "ジャッカルドール",
+    "team": "Jackal",
+    "description": "ジャッカル陣営の味方をする\n\r\n[[ジャッカル]]、[[ジャッカルマフィア]]、[[ジャッカルエイリアン]]と互いに視認できる\n\r\nご主人が全滅した場合、設定に応じて役職が変わったりなどする。\n\r\nタスクはない",
+    "abilities": [],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B8%E3%83%A3%E3%83%83%E3%82%AB%E3%83%AB%E3%83%89%E3%83%BC%E3%83%AB",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_JackalAlien",
+    "displayName": "ジャッカルエイリアン",
+    "team": "Jackal",
+    "description": "ターン毎に設定された確率に応じて、様々なの役職や能力に変化するジャッカル。\n\r\nターン毎の役職や能力は会議時に知ることができる\n\r\n\r\nサイドキックが作成できる場合、キルボタンが光っている状態で[[ワンクリックボタン]]を押すと、\n\r\nその時のキルターゲットを[[ジャッカルドール]]にする",
+    "abilities": [
+      "サイドキック ([[ワンクリックボタン]])",
+      "発動時のキルターゲットを[[ジャッカルドール]]にする",
+      "七変化 (常時発動)",
+      "┗ ターンによって様々な能力を持つ。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B8%E3%83%A3%E3%83%83%E3%82%AB%E3%83%AB%E3%82%A8%E3%82%A4%E3%83%AA%E3%82%A2%E3%83%B3",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_DoppelGanger",
+    "displayName": "ドッペルゲンガー",
+    "team": "Neutral",
+    "description": "シェイプ対象以外キルが出来ない\n\r\nまた、シェイプシフトを解除することもできない\n\r\nシェイプシフト中、カウントが0.1/1s溜まり、\n\r\nシェイプシフト対象をキルすると会議が始まるまでの間カウント1/1s貯まる\n\r\n追加勝利に必要なカウントを超え、ゲーム終了まで生存していると追加勝利、\n\r\n勝利に必要なカウントに達するとその時点で自身が勝利する\n\r\nベントやサボタージュは使用不可",
+    "abilities": [
+      "命の席は一つのみ (シェイプシフト)",
+      "シェイプシフト中、カウントが0.1/1s貯まる。",
+      "シェイプ解除ができない。",
+      "シェイプ対象をキルするとカウントが1/1s貯まる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%89%E3%83%83%E3%83%9A%E3%83%AB%E3%82%B2%E3%83%B3%E3%82%AC%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_MassMedia",
+    "displayName": "マスメディア",
+    "team": "Neutral",
+    "description": "キルボタンを使ってその人を追跡する事が出来る\n\r\nマスメディアは追跡相手の位置が分かるが、追跡相手が近いと視界が真っ暗になる\n\r\n\r\n追跡相手がキルされ、自身が追跡相手の死体を通報した場合、\n\r\n誰が追跡相手をキルしたのかを投票で推測することができる\n\r\n推測を行った場合、会議で即座に終了する。\r\nスキップ投票の場合、推測は行われず、会議は引き続き行われる\n\r\n\r\n推測があっていた場合、マスメディアの勝利、\n\r\n間違っていた場合、マスメディアが死亡する\n\r\nまた、情報機器を使用することができず、追跡相手が会議後リセットされる\n\r\n\r\nマスメディアが対象の死体を通報する時のみ、[[トランスパレント]]、[[ノンレポート]]等の効果は適応されない",
+    "abilities": [
+      "追跡報道 (キルでターゲット選択)",
+      "ターゲットを追跡する",
+      "犯人は○○...!? (自身が追跡相手の死体を通報し、スキップ以外に投票する)",
+      "投票で追跡相手を殺した犯人を推測できる",
+      "推測があっているとマスメディアの勝利、",
+      "間違っている場合、自身が死亡する(死因：誤爆)",
+      "間違っている場合、マスメディアが投票した相手は追放されない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%82%B9%E3%83%A1%E3%83%87%E3%82%A3%E3%82%A2",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Banker",
+    "displayName": "バンカー",
+    "team": "Neutral",
+    "description": "タスク、キルを行うことでポイントが貯まる\n\r\nモード変更、ターン開始時にポイントを消費する\n\r\nベントに入ることでタスクモード、キルモードを切り替えることができる\n\r\n試合終了時点で一定ポイントを所持していると追加勝利",
+    "abilities": [
+      "モードチェンジ (ベント使用)",
+      "Taskモードならkillモード",
+      "KillモードならTaskモード",
+      "通信妨害中、TaskモードからKillモードにチェンジすることはできない",
+      "◀ ポイント貯め (キル/タスクを1つ完了)",
+      "キルならキルすることで手に入るポイント分ポイントが追加される",
+      "タスクならタスクを行うことで手に入るポイント分ポイントが追加される"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%90%E3%83%B3%E3%82%AB%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_BakeCat",
+    "displayName": "バケネコ",
+    "team": "Neutral",
+    "description": "始めは自身がクルーだと全員が思い込む\n\r\nキルされると、キルを防いでキルしてきた陣営に所属する\n\r\n所属後、キルが可能になる\n\r\nタスクはない\n\r\n無所属のまま試合が終わるとクルーと一緒に勝利する",
+    "abilities": [
+      "ん...にゃおおおお～ん! (キルされそうになった時)",
+      "一部特殊キルではない時、その時のみキルをガードし、",
+      "キルをしてきた人の陣営に所属する",
+      "所属した後、自身もキル可能になる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%90%E3%82%B1%E3%83%8D%E3%82%B3",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_PhantomThief",
+    "displayName": "怪盗",
+    "team": "Neutral",
+    "description": "キルボタンを使用する事で、役職を盗むターゲットを指定できる\n\r\n怪盗がターゲットを指定すると、次の開始時に予告状が送られ、\n\r\nターゲットの情報が公開される(設定有)\n\r\n\r\nターゲットが生存した状態でターゲットが勝利条件を満たしている時、\n\r\nターゲットの役職を奪って勝利できる。\n\r\nこの時、ターゲットは[[空虚者]]になり、敗北となる\n\r\nターゲットが死亡すると再指定ができる\n\r\nただし、ターゲット生存中の上書きはできない\n\r\n\r\n生存者が設定人数を下回ると、ターゲットを指定できなくなる",
+    "abilities": [
+      "対象設定 (キル)",
+      "キルで盗みを行う対象を決める",
+      "☆ 盗み (ゲーム終了時、ターゲットが生存しており、勝利している)",
+      "ターゲットの役職を盗み、自身が代りに勝利する"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E6%80%AA%E7%9B%97",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Fox",
+    "displayName": "妖狐",
+    "team": "Neutral",
+    "description": "ゲーム終了時まで生存していると単独勝利(タスク勝利時の設定有)\n\r\n\n\r\nサボタージュが修復できないが、ベントを持つ。\n\r\n設定タスク完了毎にキルガードが1枚付与される\n\r\nタスクターン中、プレイヤーと長く接触すると、自身が妖狐であることが全体に分かってしまう。\n\r\n\n\r\n初手ターン以降、名前の下に表示される部屋に行かないと\n\r\n次会議、自身が生存していることが通知されてしまう",
+    "abilities": [
+      "()",
+      "→ワンクリ",
+      "→キル",
+      "→常時発動",
+      "→ベント",
+      "→自投票",
+      "→タスク",
+      "→その他のアビリティ"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E5%A6%96%E7%8B%90",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_SantaClaus",
+    "displayName": "サンタクロース",
+    "team": "Neutral",
+    "description": "タスクを全て完了させることでプレゼントを作成することができる\n\r\n\r\nプレゼント作成後、指定されたベントに入ることで\n\r\nプレゼントを投下することができる\n\r\n\r\n指定数プレゼントを投下すれば勝利\n\r\n\r\nプレゼントを投下したターンの会議でプレゼントが届いた通知が来る\n\r\n\r\nプレゼントを投下するとタスクが再度復活する",
+    "abilities": [
+      "プレゼント作成 (タスク全完了)",
+      "全てタスクを完了させるとプレゼントを作成できる",
+      "プレゼント投下 (指定されたベントに入る)",
+      "プレゼントを投下する",
+      "指定数プレゼントを渡せば勝利",
+      "投下後、タスクが再度復活する"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B5%E3%83%B3%E3%82%BF%E3%82%AF%E3%83%AD%E3%83%BC%E3%82%B9",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Vulture",
+    "displayName": "ヴァルチャー",
+    "team": "Neutral",
+    "description": "通報ボタンを押すことで死体をつまみぐいする事ができる。\n\r\n一定回数つまみぐいを行うと勝利。\n\r\nタスクを行うことでキルフラッシュが見えたり、\n\r\n死体への矢印を受け取ることができる\n\r\n\n\r\nそのターンにつまみぐいされた死体は会議で×がつく。",
+    "abilities": [
+      "つまみぐい(死体通報ボタン使用)",
+      "死体をつまみぐいする。",
+      "指定回数つまみ食いを行うと勝利",
+      "つまみ食いした時、シェイプの殻を表示するがOnの時、",
+      "シェイプの卵が表示される",
+      "つまみ食いされた死体は通報できなくなる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%B4%E3%82%A1%E3%83%AB%E3%83%81%E3%83%A3%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Turncoat",
+    "displayName": "裏切者",
+    "team": "Neutral",
+    "description": "ターゲットに★マークがついている。\n\r\n\n\r\nゲーム終了時、ターゲットが敗北し、自身が生存していると追加勝利。\n\r\nターゲットが死亡すると裏切者視点ターゲットの役職が分かるようになる。",
+    "abilities": [
+      "裏切りの準備(ターゲット死亡時常時発動)",
+      "ターゲットの役職が分かるようになる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E8%A3%8F%E5%88%87%E8%80%85",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Strawdoll",
+    "displayName": "藁人形",
+    "team": "Neutral",
+    "description": "変身した状態で設定回数回キルを身代わりさせれば勝利。\n\r\n\n\r\nキルボタンでターゲットを指定し、ファントムボタンを押すことでターゲットに変身することができる。\n\r\n変身した状態でターゲットに近づくと自身が死亡する。\n\r\n\n\r\nターゲットが生存かつ変身中にキルされるとキルを防ぎ、ターゲットが代わりに死亡する。\n\r\nその後、変身が解除され、発動地点にテレポートする。",
+    "abilities": [
+      "変身([[ワンクリックボタン]])",
+      "キルでターゲット選択後、に[[ワンクリックボタン]]使用で変身できる。",
+      "変身状態でキルされると変身対象がキルされる。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E8%97%81%E4%BA%BA%E5%BD%A2",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Missioneer",
+    "displayName": "ミッショナー",
+    "team": "Neutral",
+    "description": "毎ターン複数から一つのミッションを選ぶことができる。\n\r\n\n\r\nミッションをこなすと「レベル + カテゴリ」の設定合計ポイントを入手できる。\n\r\nミッションは再設定するまで変更されない。\n\r\n\n\r\n一定ポイントに達すると勝利。",
+    "abilities": [
+      "ミッション(常時発動)",
+      "自身で選択したミッションを成功させることで、",
+      "カテゴリポイント + レベルポイントの合計値のポイントが手に入る。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9F%E3%83%83%E3%82%B7%E3%83%A7%E3%83%8A%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_DriverandBraid",
+    "displayName": "ドライバーとブレイド",
+    "team": "Other",
+    "description": "ブレイドとのコンビネーション役職\n\r\n\r\nブレイドが規定のタスク数を完了させると\n\r\nドライバーに様々な能力が付与される",
+    "abilities": [
+      "☆ ブレイドの援助 (自動発動)",
+      "ブレイドが規定タスク完了させると",
+      "ドライバーに能力が付与される",
+      "ブレイド",
+      "陣営：インポスター",
+      "判定：ベントを使えるがOn:エンジニア　Off:クルーメイト",
+      "カウント：クルーメイト"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%89%E3%83%A9%E3%82%A4%E3%83%90%E3%83%BC%E3%81%A8%E3%83%96%E3%83%AC%E3%82%A4%E3%83%89",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_AssassinandMerlin",
+    "displayName": "アサシンとマーリン",
+    "team": "Other",
+    "description": "追放、又は「追放以外でもアサシン会議を起こす」の設定が有効時に死亡時に\n\r\nアサシン会議を発生させることができる。\n\r\nアサシン会議でマーリンに推測(投票)できればインポスターの勝利。\n\r\nまた、設定有効時にはアサシンと併せて一部の役職の能力を持つこともできる。",
+    "abilities": [
+      "アサシン会議(追放時発動)",
+      "追放された直後、会議が発生する。",
+      "その会議でマーリンに投票することで逆転勝利することができる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A2%E3%82%B5%E3%82%B7%E3%83%B3%E3%81%A8%E3%83%9E%E3%83%BC%E3%83%AA%E3%83%B3",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Twins",
+    "displayName": "双子",
+    "team": "Other",
+    "description": "基本、クルーメイト\n\r\n設定によっては、マッドメイト、キル不可能ニュートラルに付与される\n\r\n2人1組の重複役職\n\r\nお互い双子であることが分かる",
+    "abilities": [],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E5%8F%8C%E5%AD%90",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Faction",
+    "displayName": "徒党",
+    "team": "Other",
+    "description": "設定された役職に必ずアサインされる属性。\r\n設定によって、徒党(ととう)同士「δ」マークがつく。\r\n徒党の誰かが単独勝利すると、徒党全員勝利する。\r\n\r\nラバーズの場合、徒党は付与されるが徒党での勝利はできない。",
+    "abilities": [],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E5%BE%92%E5%85%9A",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_GM",
+    "displayName": "ゲームマスター",
+    "team": "Other",
+    "description": "メイン設定のゲームマスターがOnの場合のみホストにアサインされる。\n\r\nゲーム開始後死亡する。\n\r\n生存カウント、それぞれの役職カウントに含まれない\n\r\n基本、ゲームに影響を与えない",
+    "abilities": [],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B2%E3%83%BC%E3%83%A0%E3%83%9E%E3%82%B9%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_OneWolf",
+    "displayName": "一匹狼",
+    "team": "Other",
+    "description": "(属性):\r\n仲間のインポスターが分からなくなる、インポスター限定属性\r\n\r\n一匹狼ではないインポスターから一匹狼は見えない。",
+    "abilities": [
+      "単独行動(常時発動)",
+      "完全に孤立したインポスターになる。",
+      "仲間が分からず、仲間から自身がインポスターだとも分からない。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E4%B8%80%E5%8C%B9%E7%8B%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_LastImpostor",
+    "displayName": "ラストインポスター",
+    "team": "Other",
+    "description": "最後のインポスターに付与される属性\n\r\nキルクールが設定した時間まで短くなる\n\r\n一部インポスター役職には付与されない",
+    "abilities": [
+      "■ 最後の底力 (自動発動)",
+      "属性やキルクール現象、キルディスタンスの更新等",
+      "少し能力が強化される"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%A9%E3%82%B9%E3%83%88%E3%82%A4%E3%83%B3%E3%83%9D%E3%82%B9%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_LastNeutral",
+    "displayName": "ラストニュートラル",
+    "team": "Other",
+    "description": "最後のニュートラルに付与される属性\n\r\nもしキル能力があれば、設定した時間にキルクールが設定される\n\r\nまた、生存時追加勝利するかを設定で決めることができる",
+    "abilities": [
+      "■ ニュートラルの想いを背負って (自動発動)",
+      "属性やキルクール現象、キルディスタンスの更新等",
+      "少し能力が強化される"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%A9%E3%82%B9%E3%83%88%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%88%E3%83%A9%E3%83%AB",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Workhorse",
+    "displayName": "ワークホース",
+    "team": "Other",
+    "description": "最初に生きてタスクを終えたクルーに付与される属性\n\r\n追加タスクが割り当てられる\n\r\nクルーメイト以外にも割り当てられる設定でも、タスクが無い\n\r\nタスク上書き設定が存在している役職には付与されない\n\r\nワークホースに一度なると、再度ワークホースになることは無い",
+    "abilities": [
+      "■ ザンギョウ... (付与時発動)",
+      "追加タスクが割り当てられる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%AF%E3%83%BC%E3%82%AF%E3%83%9B%E3%83%BC%E3%82%B9",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Ghostbuttoner",
+    "displayName": "ゴーストボタナー",
+    "team": "Crewmate",
+    "description": "死亡したクルー陣営にしか付与されない\n\r\n守護能力を発動すると、緊急会議を起こすことができる",
+    "abilities": [
+      "ｶﾁｯ",
+      "発動すると緊急会議を起こすことができる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%83%9C%E3%82%BF%E3%83%8A%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_GhostNoiseSender",
+    "displayName": "ゴーストノイズセンダー",
+    "team": "Crewmate",
+    "description": "死亡したクルー陣営にしか付与されない\n\r\n守護能力を発動すると対象者が死亡した時、\n\r\n対象者がノイズメーカーの能力を発揮する\n\r\n死体が残らない死に方をした場合、能力は発揮されない",
+    "abilities": [
+      "ﾋﾞﾋﾞﾋﾞﾋﾞﾋﾞﾋﾟﾋﾟﾋﾟﾋﾟﾋﾟﾋﾟ!!!!",
+      "能力発動相手が効果時間の設定秒数以内に死亡すると",
+      "能力発動相手がノイズメーカーの警報を発動する"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%83%8E%E3%82%A4%E3%82%BA%E3%82%BB%E3%83%B3%E3%83%80%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_GhostReseter",
+    "displayName": "ゴーストリセッター",
+    "team": "Crewmate",
+    "description": "死亡したクルー陣営にしか付与されない\n\r\n守護能力を発動しようとすると、対象者のキルクールがリセットされる\n\r\n設定によってはアビリティ能力のクールダウンもリセットされる",
+    "abilities": [
+      "リセーット!",
+      "能力発動相手のキルクールがリセットされる",
+      "アビリティもリセットされるがOnの場合、アビリティクールダウンもリセットされる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%83%AA%E3%82%BB%E3%83%83%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_GhostRumour",
+    "displayName": "ゴーストルーモア",
+    "team": "Crewmate",
+    "description": "死亡したクルー陣営(設定によってはマッドメイト)にしか付与されない。\r\n守護能力を発動し、\n\r\n次会議の時、守護対象が生存していれば\n\r\n守護対象の役職を全員に通知することができる。\r\n能力は1度のみ使用できる。",
+    "abilities": [
+      "僕の声が届いたかな(能力予約後、会議時発動)",
+      "守護能力の相手が生存していれば、",
+      "会議時、対象の役職が通知される"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B4%E3%83%BC%E3%82%B9%E3%83%88%E3%83%AB%E3%83%BC%E3%83%A2%E3%82%A2",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_DemonicTracker",
+    "displayName": "デーモントラッカー",
+    "team": "Madmate",
+    "description": "死亡したマッドメイトにしか付与されない\n\r\n守護能力の使用相手の居場所がインポスターに通知されるようになる",
+    "abilities": [
+      "ご主人へ位置通知",
+      "能力発動相手の位置がインポスターに矢印で表示される"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%87%E3%83%BC%E3%83%A2%E3%83%B3%E3%83%88%E3%83%A9%E3%83%83%E3%82%AB%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_DemonicVenter",
+    "displayName": "デーモンベンター",
+    "team": "Madmate",
+    "description": "死亡したマッドメイトにしか付与されない\n\r\n守護能力を発動しようとすると\n\r\n使用相手から一番近いベントが開く",
+    "abilities": [
+      "ﾊﾟｶｯ!",
+      "使用相手から一番近いベントを開ける"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%87%E3%83%BC%E3%83%A2%E3%83%B3%E3%83%99%E3%83%B3%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_DemonicCrusher",
+    "displayName": "デーモンクラッシャー",
+    "team": "Madmate",
+    "description": "死亡したマッドメイトにしか付与されない\n\r\n守護能力を発動しようとすると\n\r\n一定時間生存者全員情報機器が使用できなくなる",
+    "abilities": [
+      "通信障害",
+      "守護能力を発動すると、",
+      "生存者全員情報機器が使用できない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%87%E3%83%BC%E3%83%A2%E3%83%B3%E3%82%AF%E3%83%A9%E3%83%83%E3%82%B7%E3%83%A3%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_DemonicSupporter",
+    "displayName": "デーモンサポーター",
+    "team": "Madmate",
+    "description": "死亡したマッドメイトにしか付与されない。\n\r\nサボタージュが使用可能になる。",
+    "abilities": [
+      "☆ ご主人のサポート(サボタージュ)",
+      "死亡後、サボタージュが解放される。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%87%E3%83%BC%E3%83%A2%E3%83%B3%E3%82%B5%E3%83%9D%E3%83%BC%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_AsistingAngel",
+    "displayName": "アシスティングエンジェル",
+    "team": "Neutral",
+    "description": "死亡したクルー/ニュートラルにしか付与されない\n\r\n始めて守護能力を使用した相手が勝利すると自身も追加勝利する\n\r\n\r\nアシスト対象を選択後、\n\r\nアシスト対象に守護能力を使うと\n\r\nアシスト対象へ一定時間キルガードを付与する\n\r\n\r\nアシスト対象以外に守護能力を使うと\n\r\n発動地点の位置がアシスト対象に矢印で表示される\n\r\n\r\n能力を使用した場合、次のクールダウンが増加する\n\r\n\r\n設定に関わらず他人の役職などが見えない\n\r\n元役職の勝利条件が無くなり、タスクもカウントされなくなる",
+    "abilities": [
+      "アシスト",
+      "アシスト対象がまだ決まってない時、アシスト対象を決める",
+      "再度、アシスト対象に発動すると一定時間キルガードを付与する",
+      "アシスト対象以外に発動すると発動地点の位置がアシスト対象に表示される"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A2%E3%82%B7%E3%82%B9%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0%E3%82%A8%E3%83%B3%E3%82%B8%E3%82%A7%E3%83%AB",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Watching",
+    "displayName": "ウォッチング",
+    "team": "Other",
+    "description": "全員の投票先を見ることができる",
+    "abilities": [
+      "■ どこにいれたのかい?",
+      "匿名投票が自視点のみOFFになる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A6%E3%82%A9%E3%83%83%E3%83%81%E3%83%B3%E3%82%B0",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Speeding",
+    "displayName": "スピーディング",
+    "team": "Other",
+    "description": "他のプレイヤーよりも速度が速くなる",
+    "abilities": [
+      "■ 残像さっ",
+      "移動速度が設定値になる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B9%E3%83%94%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Moon",
+    "displayName": "ムーン",
+    "team": "Other",
+    "description": "停電の影響を無効化できる\n\r\nインポスターには付与されない",
+    "abilities": [
+      "■ 月夜の明かり",
+      "停電の影響を無効化できる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%A0%E3%83%BC%E3%83%B3",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Guesser",
+    "displayName": "ゲッサー",
+    "team": "Other",
+    "description": "会議中に「/bt (ID) (役職名)」と送信することで推測ができる\n\r\n\r\n会議中に誰かの役職を推測することができ、\n\r\n的中すると対象をキルすることができる\n\r\nただし、推測が外れると、自殺する(死因：誤爆)\n\r\n\r\n会議中、プレイヤー名の左側に表示されている数字がそのプレイヤーのIDである",
+    "abilities": [
+      "■ 口を滑らしたようだね (会議中コマンド使用)",
+      "推測があっている場合、対象をその場でキルする(死因：ゲッサー)",
+      "推測が間違っていると、自身がその場で死亡する(死因：誤爆)"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B2%E3%83%83%E3%82%B5%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Lighting",
+    "displayName": "ライティング",
+    "team": "Other",
+    "description": "インポスター視界になる\n\r\nただし、停電の影響は受ける",
+    "abilities": [
+      "■ ウチが眩しいZE☆",
+      "インポスター視界になる",
+      "停電の影響は受ける"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%A9%E3%82%A4%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Management",
+    "displayName": "マネジメント",
+    "team": "Other",
+    "description": "プレイヤー全体でのタスク進捗が分かる\n\r\nパーセント表示に設定で変更が可能",
+    "abilities": [
+      "■ 集計",
+      "タスク進捗が名前の横に記載される"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Connecting",
+    "displayName": "コネクティング",
+    "team": "Other",
+    "description": "2人以上でしか排出されない\n\r\nインポスター、マッドメイト系役職、[[狼少年]]飲みに付与される属性\n\r\n\r\nコネクティング同士でΨのマークがついており、\n\r\nお互いが同陣営であることを確認できる\n\r\n\r\nただし、狼少年にはコネクティングが付与されていることを自覚できず、\n\r\n他のコネクティングのプレイヤーから一方的に確認できる",
+    "abilities": [
+      "■ お見通し",
+      "コネクティングが付与されているプレイヤーの名前の横にΨがつく"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B3%E3%83%8D%E3%82%AF%E3%83%86%E3%82%A3%E3%83%B3%E3%82%B0",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Serial",
+    "displayName": "シリアル",
+    "team": "Other",
+    "description": "キル可能役職にのみふよされる属性\n\r\nキルクールが設定した時間まで短くなる",
+    "abilities": [
+      "■ もっともっと!!",
+      "キルクールが設定値になる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B7%E3%83%AA%E3%82%A2%E3%83%AB",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_PlusVote",
+    "displayName": "プラスポート",
+    "team": "Other",
+    "description": "会議の表を複数持ち、まとめて一人または\n\r\nスキップに入れることができる\n\r\n[[ノットヴォウター]]が付与されている場合は機能しない",
+    "abilities": [
+      "■ 圧倒的な権力",
+      "自身の投票数が追加投票の個数の設定票数になる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%97%E3%83%A9%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Opener",
+    "displayName": "オープナー",
+    "team": "Other",
+    "description": "ドアを開けるとその部屋の全てのドアが開く\n\r\nマップがSkeld,MIRAHPの時は効果が発揮されない",
+    "abilities": [
+      "■ 開けゴマ!",
+      "ドアを開けるとその部屋のドアが全て開く"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%AA%E3%83%BC%E3%83%97%E3%83%8A%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Seeing",
+    "displayName": "シーイング",
+    "team": "Other",
+    "description": "プレイヤーが死亡するごとに、シーイングはキルフラッシュを見ることができる",
+    "abilities": [
+      "■ 君が見えた...",
+      "誰かがキルされると、自視点のみ見えるキルフラッシュが表示る"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B7%E3%83%BC%E3%82%A4%E3%83%B3%E3%82%B0",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Revenger",
+    "displayName": "リベンジャー",
+    "team": "Other",
+    "description": "追放された時、ランダムで誰か一人を道連れにできる\n\r\nどの字寧を道連れできるか設定で変更が可能",
+    "abilities": [
+      "■ ｼｬｱｱｱｱｱ----^^",
+      "追放時ランダムで一人を道連れにできる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%AA%E3%83%99%E3%83%B3%E3%82%B8%E3%83%A3%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Autopsy",
+    "displayName": "オートプシー",
+    "team": "Other",
+    "description": "死亡した人の死因を見ることができる(設定有)",
+    "abilities": [
+      "■ 彼は...",
+      "死亡したプレイヤーの名前の横に死因が表示される",
+      "[[ドクター]]の死因一覧を見てーね"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%AA%E3%83%BC%E3%83%88%E3%83%97%E3%82%B7%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Tiebreaker",
+    "displayName": "タイブレーカー",
+    "team": "Other",
+    "description": "同数投票であるプレイヤーもしくはスキップのうち\n\r\nタイブレーカーに1番多く投票された方を優先できる\n\r\n\r\nタイブレーカーも同数の場合、同数投票のまま会議が終了する\n\r\n天秤会議では発動しない",
+    "abilities": [
+      "■ 優先させていただくぜっ",
+      "同数投票の場合、最多投票のうち",
+      "タイブレーカーが入れた人数が多い方が優先される"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%BF%E3%82%A4%E3%83%96%E3%83%AC%E3%83%BC%E3%82%AB%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Guarding",
+    "displayName": "ガーディング",
+    "team": "Other",
+    "description": "キルを一定数ガードすることができる",
+    "abilities": [
+      "■ キルガード",
+      "キルを一定数ガードする"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%AC%E3%83%BC%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_MagicHand",
+    "displayName": "マジックハンド",
+    "team": "Other",
+    "description": "キル可能役職のみに付与される属性\n\r\nキルディスタンスが設定値になる",
+    "abilities": [
+      "■ ﾋﾞﾖﾖﾖﾖ~ﾝ",
+      "キルディスタンスが設定値になる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%9E%E3%82%B8%E3%83%83%E3%82%AF%E3%83%8F%E3%83%B3%E3%83%89",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Powerful",
+    "displayName": "パワフル",
+    "team": "Other",
+    "description": "キル可能役職にのみ付与される属性。\r\n通常キルのキルパワーが2になる。",
+    "abilities": [
+      "ﾊﾟﾜｱｱｱｱｱｱｱ!!(キル時自動発動)",
+      "通常キルのパワーが2になる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%91%E3%83%AF%E3%83%95%E3%83%AB",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Stack",
+    "displayName": "スタック",
+    "team": "Other",
+    "description": "設定した属性がゲーム開始時に付与される。",
+    "abilities": [
+      "お届け物で～す(ゲーム開始時)",
+      "設定された属性がゲーム開始時に付与される"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B9%E3%82%BF%E3%83%83%E3%82%AF",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_SlowStarter",
+    "displayName": "スロースターター",
+    "team": "Other",
+    "description": "インポスターにしか付与されない\n\r\n味方の生存人数が一定人数を下回るまでキル出来ない",
+    "abilities": [
+      "■ Zzz...",
+      "インポスターの生存人数が一定以下になるまでキルができない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B9%E3%83%AD%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%BC%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_NonReport",
+    "displayName": "ノンレポート",
+    "team": "Other",
+    "description": "緊急会議ボタン・死体通報が使用できない\n\r\nどちらか片方のみに設定で変更が可能",
+    "abilities": [
+      "■ メガホン壊れちゃった...",
+      "通報ができない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%8E%E3%83%B3%E3%83%AC%E3%83%9D%E3%83%BC%E3%83%88",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Notvoter",
+    "displayName": "ノットヴォウター",
+    "team": "Other",
+    "description": "投票数が0票となる\n\r\n投票で能力発揮する役職は能力のみ使用できる",
+    "abilities": [
+      "■ えっ!!投票の仕方間違えてたの!?",
+      "投票数が0になる"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%8E%E3%83%83%E3%83%88%E3%83%B4%E3%82%A9%E3%82%A6%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Elector",
+    "displayName": "イレクター",
+    "team": "Other",
+    "description": "投票スキップができない",
+    "abilities": [
+      "■ 誰かに入れないと...",
+      "投票スキップができない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A4%E3%83%AC%E3%82%AF%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Water",
+    "displayName": "ウォーター",
+    "team": "Other",
+    "description": "停電を修復できない",
+    "abilities": [
+      "■ 感電しちゃうんだけど...",
+      "停電サボタージュを修復できない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%BF%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Slacker",
+    "displayName": "スラッカー",
+    "team": "Other",
+    "description": "リアクター,O2を修復できない",
+    "abilities": [
+      "■ うーん...Zzz",
+      "リアクター,O2,ヘリサボを修復できない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B9%E3%83%A9%E3%83%83%E3%82%AB%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Clumsy",
+    "displayName": "クラムシー",
+    "team": "Other",
+    "description": "通信妨害を直せない",
+    "abilities": [
+      "■ わしにはわからん..",
+      "通信妨害を修復できない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%AF%E3%83%A9%E3%83%A0%E3%82%B7%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Transparent",
+    "displayName": "トランスパレント",
+    "team": "Other",
+    "description": "自身の死体を誰も通報できなくなる",
+    "abilities": [
+      "■ あれ...?見えてる...?",
+      "自身の死体が通報できない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%88%E3%83%A9%E3%83%B3%E3%82%B9%E3%83%91%E3%83%AC%E3%83%B3%E3%83%88",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Amnesia",
+    "displayName": "アムネシア",
+    "team": "Other",
+    "description": "自身がアムネシアだと自覚できない\n\r\nまた、自身の役職が設定日数目の会議が終了するまで分からない\n\r\n陣営のみ知ることができる\n※マッドメイトはニュートラル判定\n\r\nタスクで覚醒がOnかつ、自身がインポスターでは無い時、\n\r\n一定数タスクを終わらせると自身の役職を思い出す\n\r\nキルで覚醒がonかつ、自身がインポスターの時、\n\r\n一定数キルを行うことで自身の役職を思い出す\n\r\n\r\n設定がONの場合、役職能力が発揮されない",
+    "abilities": [
+      "■ なにか忘れてるような...?",
+      "条件を満たすまで自身の陣営しか分からない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A2%E3%83%A0%E3%83%8D%E3%82%B7%E3%82%A2",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_InfoPoor",
+    "displayName": "インフォプアー",
+    "team": "Other",
+    "description": "情報機器が使用できない\n\r\nファングルの望遠鏡への効果はない",
+    "abilities": [
+      "■ なんか壊れたんだけどぉ?",
+      "情報機器が使用できない"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%A4%E3%83%B3%E3%83%95%E3%82%A9%E3%83%97%E3%82%A2%E3%83%BC",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_News",
+    "displayName": "ニュース",
+    "team": "Other",
+    "description": "設定された条件を満たし、生存していると、会議で貴方の役職が生存していることが通知されてしまう。",
+    "abilities": [
+      "ニュースです...(条件達成後の会議)",
+      "付与されたプレイヤーの役職が会議で通知される。"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9",
+    "verifiedAt": "2026-11-23"
+  },
+  {
+    "mod": "TOHK",
+    "name": "TOHK_Sunglasses",
+    "displayName": "サングラス",
+    "team": "Other",
+    "description": "視界が一定倍率低下する。",
+    "abilities": [
+      "堕天使は我の力を制限しているｯ!(常時発動)"
+    ],
+    "source": "TownOfHost-K Wiki・指定版との差分未確認",
+    "sourceUrl": "https://github.com/KYMario/TownOfHost-K/wiki/%E3%82%B5%E3%83%B3%E3%82%B0%E3%83%A9%E3%82%B9",
+    "verifiedAt": "2026-11-23"
   }
 ]
