@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Among Usのバニラ・MOD役職を調べて当てる日本語図鑑">
+  <title>Among Us 役職アトラス</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="#home">◉ ROLE ATLAS</a><nav aria-label="主なメニュー"><a href="#encyclopedia">図鑑</a><a href="#guess">役職当て</a><a href="#sources">データについて</a></nav></header>
+  <main>
+    <section id="home" class="hero">
+      <p class="eyebrow">AMONG US · ROLE ENCYCLOPEDIA</p><h1>役職を知る。<br><em>正体を見抜く。</em></h1><p>バニラ役職とMOD役職を、出典・確認状況つきで整理した日本語図鑑です。</p>
+      <div class="hero-actions"><a class="button primary" href="#guess">役職を当てる</a><a class="button ghost" href="#encyclopedia">図鑑を開く</a></div>
+      <div id="stats" class="stats" aria-live="polite"></div>
+    </section>
+
+    <section id="guess" class="panel"><div class="section-heading"><p class="eyebrow">YES / NO</p><h2>役職当て</h2><p>最初に範囲を選ぶと、その中の役職だけから質問を作ります。</p></div>
+      <div id="guess-setup" class="guess-setup"><label>対象データ<select id="quiz-scope" aria-label="対象データ"></select></label><button id="start-quiz" class="button primary">はじめる</button></div>
+      <div id="quiz" hidden>
+        <p id="quiz-progress" class="muted"></p><h3 id="question">読み込み中…</h3><div class="answer-buttons"><button data-answer="yes" class="button primary">はい</button><button data-answer="no" class="button danger">いいえ</button><button data-answer="unknown" class="button ghost">わからない</button></div>
+        <div class="quiz-meta"><button id="undo" class="text-button">← 1問戻る</button><button id="restart" class="text-button">やり直す</button></div><div id="candidates" class="candidate-list"></div>
+      </div>
+    </section>
+
+    <section id="encyclopedia" class="panel"><div class="section-heading"><p class="eyebrow">ROLE ENCYCLOPEDIA</p><h2>役職図鑑</h2><p>バニラは公式確認済み、MODはCSV由来の未検証データから順次確認します。</p></div>
+      <div class="filters"><label>検索<input id="search" type="search" placeholder="役職名で検索"></label><label>分類<select id="mod-filter"></select></label><label>陣営<select id="team-filter"><option value="all">すべての陣営</option></select></label></div>
+      <p id="result-count" class="muted"></p><div id="role-grid" class="role-grid"></div>
+    </section>
+
+    <section id="sources" class="panel data-panel"><div class="section-heading"><p class="eyebrow">DATA STATUS</p><h2>データについて</h2></div>
+      <div class="notice verified"><strong>公式確認済み</strong><span>バニラ役職はInnersloth公式情報に照合しています。2026年追加のジャッジ・インフルエンサーも追補済みです。</span></div>
+      <div class="notice pending"><strong>MOD確認中</strong><span>MOD役職は元CSVのフラグをそのまま保持しています。説明・能力の文章は、指定された各リリース版の情報で個別に検証してから追加します。</span></div>
+      <div id="mod-sources" class="source-list"></div>
+    </section>
+  </main>
+  <dialog id="role-dialog"><button id="close-dialog" class="close" aria-label="閉じる">×</button><div id="dialog-content"></div></dialog>
+  <footer>非公式ファンメイド図鑑。Among Us is a trademark of Innersloth LLC.</footer>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
