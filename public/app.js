@@ -79,10 +79,16 @@ function renderRoles() {
   const term = $('#search').value.trim().toLocaleLowerCase(), mod = $('#mod-filter').value, team = $('#team-filter').value;
   state.filtered = state.roles.filter(role => (mod === 'all' || role.mod === mod) && (team === 'all' || role.team === team) && (`${role.name} ${role.displayName}`.toLowerCase().includes(term)));
   $('#result-count').textContent = `${state.filtered.length}件を表示`;
-  $('#role-grid').innerHTML = state.filtered.map(role => `<button class="role-card" data-role="${role.mod}:${role.name}"><div class="badges"><span class="badge">${role.mod === 'Vanilla' ? 'Vanilla' : (state.registry[role.mod]?.label || role.mod)}</span><span class="badge ${role.verified?'verified':'pending'}">${role.verificationLabel}</span></div><h3>${role.displayName}</h3><p>${teamJa(role.team)}${role.verified ? ` · ${normalizeTerminology(role.description)}` : ' · CSV由来の能力フラグを保持'}</p></button>`).join('');
+  $('#role-grid').innerHTML = state.filtered.map(role => `<button class="role-card" data-role="${role.mod}:${role.name}"><div class="badges"><span class="badge">${role.mod === 'Vanilla' ? 'Vanilla' : (state.registry[role.mod]?.label || role.mod)}</span><span class="badge ${role.verified?'verified':'pending'}">${role.verificationLabel}</span></div><h3>${role.displayName}</h3><p>${teamJa(role.team)}${role.verified ? ` · ${escapeHtml(roleSummary(role))}` : ' · CSV由来の能力フラグを保持'}</p></button>`).join('');
   document.querySelectorAll('[data-role]').forEach(button => button.addEventListener('click', () => openRole(button.dataset.role)));
 }
 function escapeHtml(value) { return String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char])); }
+function roleSummary(role) {
+  const description = normalizeTerminology(role.description)
+    .replace(/(?:^|\n)\s*設定\s*\n[\s\S]*$/m, '')
+    .replace(/\s+/g, ' ').trim();
+  return description.length > 110 ? `${description.slice(0, 110)}…` : description;
+}
 function renderDescription(description, team) {
   const cleaned = normalizeTerminology(description)
     // Some Wiki exports include the following settings table inside the
@@ -118,8 +124,17 @@ function openRole(key) {
 function setupQuiz() {
   const scopes = ['Vanilla', ...Object.keys(state.registry).filter(mod => state.roles.some(r=>r.mod===mod)), ...[...new Set(state.roles.map(r=>r.mod))].filter(mod=>mod !== 'Vanilla' && !state.registry[mod])];
   $('#quiz-scope').innerHTML = scopes.map(mod => `<option value="${mod}">${mod === 'Vanilla' ? 'Vanilla（公式確認済み）' : (state.registry[mod]?.label || mod)}</option>`).join('');
-  $('#start-quiz').onclick = () => { state.scope = $('#quiz-scope').value; state.candidates = state.roles.filter(role => role.mod === state.scope); state.history = []; state.asked = []; $('#guess-setup').hidden = true; $('#quiz').hidden = false; renderQuiz(); };
-  document.querySelectorAll('[data-answer]').forEach(button => button.onclick = () => answer(button.dataset.answer)); $('#undo').onclick=undo; $('#restart').onclick=()=>{ $('#guess-setup').hidden=false; $('#quiz').hidden=true; };
+  $('#start-quiz').onclick = () => { state.scope = $('#quiz-scope').value; $('#guess-setup').hidden = true; $('#quiz').hidden = false; resetQuiz(); };
+  document.querySelectorAll('[data-answer]').forEach(button => button.onclick = () => answer(button.dataset.answer));
+  $('#undo').onclick=undo;
+  $('#reset-quiz').onclick=resetQuiz;
+  $('#restart').onclick=()=>{ $('#guess-setup').hidden=false; $('#quiz').hidden=true; };
+}
+function resetQuiz() {
+  state.candidates = state.roles.filter(role => role.mod === state.scope);
+  state.history = [];
+  state.asked = [];
+  renderQuiz();
 }
 function scoreQuestion(question) {
   const answers = state.candidates.map(question.test);
@@ -163,11 +178,12 @@ function nextQuestion() {
 }
 function renderQuiz() {
   const question = nextQuestion();
-  const names = state.candidates.slice(0,20).map(role => `<span class="candidate">${role.displayName}</span>`).join('');
+  const names = state.candidates.slice(0,20).map(role => `<button class="candidate candidate-button" data-quiz-role="${role.mod}:${role.name}">${role.displayName}</button>`).join('');
   $('#quiz-progress').textContent = `候補 ${state.candidates.length}件 · ${state.scope}`;
   $('#question').textContent = state.candidates.length <= 1 ? (state.candidates[0] ? `答え：${state.candidates[0].displayName}` : '候補がありません。1問戻ってください。') : question ? question.label : '候補を確認してください。';
   document.querySelectorAll('[data-answer]').forEach(button => button.disabled = state.candidates.length <= 1 || !question);
   $('#candidates').innerHTML = names + (state.candidates.length > 20 ? `<span class="candidate">ほか ${state.candidates.length-20}件</span>` : '');
+  document.querySelectorAll('[data-quiz-role]').forEach(button => button.onclick = () => openRole(button.dataset.quizRole));
 }
 function answer(answerValue) {
   const question = nextQuestion(); if (!question) return;
