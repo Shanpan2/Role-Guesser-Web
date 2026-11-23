@@ -33,6 +33,21 @@ function signals(role) {
 const questions = [
   ['isImpostor','この役職はインポスター陣営ですか？'],['canKill','キル能力を持ちますか？'],['usesVent','ベントを使えますか？'],['canProtect','他者を保護できますか？'],['canInvestigate','情報収集・調査能力がありますか？'],['isGhost','ゴーストとして固有の能力を持ちますか？'],['hasMeetingAbility','会議中に固有の能力を使えますか？'],['canDisguise','変身または透明化ができますか？']
 ];
+const detailQuestions = [
+  ['has_tasks', 'タスクを持つ役職ですか？'], ['no_task_role', 'タスクを持たない役職ですか？'],
+  ['normal_kill', '通常のキルを使えますか？'], ['special_kill', '特殊な方法でキルできますか？'],
+  ['limited_kill_power', 'キル回数またはキル条件に制限がありますか？'], ['ranged_power', '遠距離に影響する能力がありますか？'],
+  ['sabotage_power', 'サボタージュに関係する能力がありますか？'], ['report_power', '通報に関係する能力がありますか？'],
+  ['vote_power', '投票数や投票先に影響できますか？'], ['role_info_power', '他プレイヤーの役職情報を得られますか？'],
+  ['tracking_power', 'プレイヤーの位置を追跡できますか？'], ['body_info_power', '死体から情報を得られますか？'],
+  ['body_clear_power', '死体を消すことができますか？'], ['body_move_power', '死体を動かせますか？'],
+  ['revenge_kill', '死亡・追放時に誰かを道連れにできますか？'], ['delayed_kill', '時間差でキルや死亡を発生させますか？'],
+  ['teleport_power', 'テレポート能力がありますか？'], ['movement_power', '移動速度や移動方法を変える能力がありますか？'],
+  ['area_effect', '周囲の複数人・範囲に影響する能力がありますか？'], ['conversion_power', '他プレイヤーの役職や陣営を変更できますか？'],
+  ['can_win_alone', '単独勝利できる勝利条件を持ちますか？'], ['exile_win', '追放されることで勝利できますか？'],
+  ['survival_requirement_power', '生存していることが勝利条件ですか？'], ['modifier_role', '追加属性（モディファイア）ですか？'],
+  ['partner_power', 'ペア・相棒に関係する役職ですか？'], ['target_power', '特定の対象を選ぶ能力がありますか？']
+];
 
 async function load() {
   const [csv, verified, verifiedMods, registry] = await Promise.all([fetch('/data/roles-source.csv').then(r => r.text()), fetch('/data/vanilla-verified.json').then(r => r.json()), fetch('/data/mod-verified.json').then(r => r.json()), fetch('/data/mod-registry.json').then(r => r.json())]);
@@ -108,11 +123,16 @@ function nextQuestion() {
   const teamQuestions = [...new Set(state.candidates.map(role => role.team))].map(team => ({
     id: `team:${team}`, label: `この役職は${teamJa(team)}陣営ですか？`, priority: 2, test: role => role.team === team
   }));
-  const available = [...abilityQuestions, ...teamQuestions, ...nameQuestions()]
+  const csvQuestions = detailQuestions.map(([field, label]) => ({
+    id: `detail:${field}`, label, priority: 2, test: role => truth(role.raw?.[field]) === true
+  }));
+  const available = [...abilityQuestions, ...teamQuestions, ...csvQuestions]
     .filter(question => !state.asked.includes(question.id))
     .map(scoreQuestion)
     .filter(question => question.score > 0);
   if (available.length) return available.sort((a, b) => b.score - a.score || b.priority - a.priority)[0];
+  const nameAvailable = nameQuestions().filter(question => !state.asked.includes(question.id)).map(scoreQuestion).filter(question => question.score > 0);
+  if (nameAvailable.length) return nameAvailable.sort((a, b) => b.score - a.score)[0];
   const fallback = state.candidates.find(role => !state.asked.includes(`exact:${role.mod}:${role.name}`));
   return fallback ? {
     id: `exact:${fallback.mod}:${fallback.name}`,
