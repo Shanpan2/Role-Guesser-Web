@@ -85,6 +85,9 @@ function renderRoles() {
 function escapeHtml(value) { return String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char])); }
 function renderDescription(description, team) {
   const cleaned = normalizeTerminology(description)
+    // Some Wiki exports include the following settings table inside the
+    // description as well.  It is rendered separately below.
+    .replace(/(?:^|\n)\s*設定\s*\n[\s\S]*$/m, '')
     .replace(/\u3000/g, ' ')
     .replace(/[ \t]+/g, ' ')
     .replace(/(ボタン能力(?:「[^」]+」)?[：:])\s*/g, '$1\n')
@@ -96,7 +99,10 @@ function renderDescription(description, team) {
   return `<div class="role-description">${intro.map((part, index) => `<p>${index === 0 && String(team || '').trim() ? `<strong>（${escapeHtml(teamJa(team))}）：</strong>` : ''}${escapeHtml(part)}</p>`).join('')}${bullets.length ? `<ul>${bullets.map(part => `<li>${escapeHtml(part.slice(1))}</li>`).join('')}</ul>` : ''}</div>`;
 }
 function renderSettings(settings) {
-  const lines = String(settings || '').split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+  // The TOHK Wiki source occasionally appends its notes after the table.
+  // Keep the table here and let renderNotes handle those notes on their own.
+  const settingsOnly = String(settings || '').split(/\r?\n\s*(?:補足説明\s*\/\s*仕様|補足説明|仕様)\s*\r?\n/)[0];
+  const lines = settingsOnly.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
   const tableRows = lines.filter(line => line.startsWith('|')).filter(line => !/^\|?\s*[-:]+(?:\s*\|\s*[-:]+)+\s*\|?$/.test(line)).map(line => line.split('|').slice(1, -1).map(cell => cell.trim()));
   const prose = lines.filter(line => !line.startsWith('|'));
   if (!tableRows.length && !prose.length) return '';
