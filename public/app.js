@@ -61,9 +61,22 @@ function renderRoles() {
   $('#role-grid').innerHTML = state.filtered.map(role => `<button class="role-card" data-role="${role.mod}:${role.name}"><div class="badges"><span class="badge">${role.mod === 'Vanilla' ? 'Vanilla' : (state.registry[role.mod]?.label || role.mod)}</span><span class="badge ${role.verified?'verified':'pending'}">${role.verificationLabel}</span></div><h3>${role.displayName}</h3><p>${teamJa(role.team)}${role.verified ? ` · ${role.description}` : ' · CSV由来の能力フラグを保持'}</p></button>`).join('');
   document.querySelectorAll('[data-role]').forEach(button => button.addEventListener('click', () => openRole(button.dataset.role)));
 }
+function escapeHtml(value) { return String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char])); }
+function renderDescription(description) {
+  const cleaned = String(description || '')
+    .replace(/\u3000/g, ' ')
+    .replace(/[ \t]+/g, ' ')
+    .replace(/(ボタン能力(?:「[^」]+」)?[：:])\s*/g, '$1\n')
+    .replace(/\s*・\s*/g, '\n・')
+    .trim();
+  const parts = cleaned.split(/\n+/).filter(Boolean);
+  const intro = parts.filter(part => !part.startsWith('・'));
+  const bullets = parts.filter(part => part.startsWith('・'));
+  return `<div class="role-description">${intro.map(part => `<p>${escapeHtml(part)}</p>`).join('')}${bullets.length ? `<ul>${bullets.map(part => `<li>${escapeHtml(part.slice(1))}</li>`).join('')}</ul>` : ''}</div>`;
+}
 function openRole(key) {
   const [mod, name] = key.split(':'); const role = state.roles.find(item => item.name === name && item.mod === mod), source = role.verified ? `<a class="source-link" target="_blank" rel="noreferrer" href="${role.sourceUrl}">${role.source}</a>` : `<a class="source-link" target="_blank" rel="noreferrer" href="${state.registry[role.mod]?.url || '#'}">${state.registry[role.mod]?.label || role.mod} ${state.registry[role.mod]?.version || '出典未設定'}</a>`;
-  const flags = role.verified ? `<p>${role.description}</p><h3>能力</h3><ul class="detail-list">${role.abilities.map(a=>`<li>${a}</li>`).join('')}</ul>` : `<p>この役職は元CSV由来です。文章による能力説明は未検証のため、断定して表示しません。</p><h3>CSVで有効な能力フラグ</h3><ul class="detail-list">${Object.entries(role.raw).filter(([key,value]) => value === 'true' && !['team_crewmate','team_impostor','team_neutral','team_liberal','team_madmate','team_jackal'].includes(key)).slice(0,30).map(([key])=>`<li>${key}</li>`).join('') || '<li>確認待ち</li>'}</ul>`;
+  const flags = role.verified ? `${renderDescription(role.description)}${role.abilities?.length ? `<h3>能力</h3><ul class="detail-list">${role.abilities.map(a=>`<li>${escapeHtml(a)}</li>`).join('')}</ul>` : ''}` : `<p>この役職は元CSV由来です。文章による能力説明は未検証のため、断定して表示しません。</p><h3>CSVで有効な能力フラグ</h3><ul class="detail-list">${Object.entries(role.raw).filter(([key,value]) => value === 'true' && !['team_crewmate','team_impostor','team_neutral','team_liberal','team_madmate','team_jackal'].includes(key)).slice(0,30).map(([key])=>`<li>${key}</li>`).join('') || '<li>確認待ち</li>'}</ul>`;
   $('#dialog-content').innerHTML = `<p class="eyebrow">${role.mod} · ${teamJa(role.team)}</p><h2>${role.displayName}</h2>${flags}<p class="muted">確認状況：${role.verified ? role.verificationLabel : 'MOD個別検証待ち'}</p><p>${source}</p>`; $('#role-dialog').showModal();
 }
 function setupQuiz() {
