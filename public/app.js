@@ -77,7 +77,7 @@ function renderRoles() {
   document.querySelectorAll('[data-role]').forEach(button => button.addEventListener('click', () => openRole(button.dataset.role)));
 }
 function escapeHtml(value) { return String(value).replace(/[&<>"']/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char])); }
-function renderDescription(description) {
+function renderDescription(description, team) {
   const cleaned = String(description || '')
     .replace(/\u3000/g, ' ')
     .replace(/[ \t]+/g, ' ')
@@ -87,11 +87,20 @@ function renderDescription(description) {
   const parts = cleaned.split(/\n+/).filter(Boolean);
   const intro = parts.filter(part => !part.startsWith('・'));
   const bullets = parts.filter(part => part.startsWith('・'));
-  return `<div class="role-description">${intro.map(part => `<p>${escapeHtml(part)}</p>`).join('')}${bullets.length ? `<ul>${bullets.map(part => `<li>${escapeHtml(part.slice(1))}</li>`).join('')}</ul>` : ''}</div>`;
+  return `<div class="role-description">${intro.map((part, index) => `<p>${index === 0 && String(team || '').trim() ? `<strong>（${escapeHtml(teamJa(team))}）：</strong>` : ''}${escapeHtml(part)}</p>`).join('')}${bullets.length ? `<ul>${bullets.map(part => `<li>${escapeHtml(part.slice(1))}</li>`).join('')}</ul>` : ''}</div>`;
 }
+function renderSettings(settings) {
+  const lines = String(settings || '').split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+  const tableRows = lines.filter(line => line.startsWith('|')).filter(line => !/^\|?\s*[-:]+(?:\s*\|\s*[-:]+)+\s*\|?$/.test(line)).map(line => line.split('|').slice(1, -1).map(cell => cell.trim()));
+  const prose = lines.filter(line => !line.startsWith('|'));
+  if (!tableRows.length && !prose.length) return '';
+  const table = tableRows.length ? `<div class="settings-table-wrap"><table class="settings-table"><thead><tr>${tableRows[0].map(cell => `<th>${escapeHtml(cell)}</th>`).join('')}</tr></thead>${tableRows.length > 1 ? `<tbody>${tableRows.slice(1).map(row => `<tr>${row.map(cell => `<td>${escapeHtml(cell)}</td>`).join('')}</tr>`).join('')}</tbody>` : ''}</table></div>` : '';
+  return `<section class="detail-section"><h3>設定</h3>${prose.length ? `<p>${prose.map(escapeHtml).join('<br>')}</p>` : ''}${table}</section>`;
+}
+function renderNotes(notes) { return notes ? `<section class="detail-section"><h3>補足・仕様</h3>${renderDescription(notes, ' ')}</section>` : ''; }
 function openRole(key) {
   const [mod, name] = key.split(':'); const role = state.roles.find(item => item.name === name && item.mod === mod), source = role.verified ? `<a class="source-link" target="_blank" rel="noreferrer" href="${role.sourceUrl}">${role.source}</a>` : `<a class="source-link" target="_blank" rel="noreferrer" href="${state.registry[role.mod]?.url || '#'}">${state.registry[role.mod]?.label || role.mod} ${state.registry[role.mod]?.version || '出典未設定'}</a>`;
-  const flags = role.verified ? `${renderDescription(role.description)}${role.abilities?.length ? `<h3>能力</h3><ul class="detail-list">${role.abilities.map(a=>`<li>${escapeHtml(a)}</li>`).join('')}</ul>` : ''}` : `<p>この役職は元CSV由来です。文章による能力説明は未検証のため、断定して表示しません。</p><h3>CSVで有効な能力フラグ</h3><ul class="detail-list">${Object.entries(role.raw).filter(([key,value]) => value === 'true' && !['team_crewmate','team_impostor','team_neutral','team_liberal','team_madmate','team_jackal'].includes(key)).slice(0,30).map(([key])=>`<li>${key}</li>`).join('') || '<li>確認待ち</li>'}</ul>`;
+  const flags = role.verified ? `${renderDescription(role.description, role.team)}${role.abilities?.length ? `<section class="detail-section"><h3>能力</h3><ul class="detail-list">${role.abilities.map(a=>`<li>${escapeHtml(a)}</li>`).join('')}</ul></section>` : ''}${renderSettings(role.settings)}${renderNotes(role.notes)}` : `<p>この役職は元CSV由来です。文章による能力説明は未検証のため、断定して表示しません。</p><h3>CSVで有効な能力フラグ</h3><ul class="detail-list">${Object.entries(role.raw).filter(([key,value]) => value === 'true' && !['team_crewmate','team_impostor','team_neutral','team_liberal','team_madmate','team_jackal'].includes(key)).slice(0,30).map(([key])=>`<li>${key}</li>`).join('') || '<li>確認待ち</li>'}</ul>`;
   $('#dialog-content').innerHTML = `<p class="eyebrow">${role.mod} · ${teamJa(role.team)}</p><h2>${role.displayName}</h2>${flags}<p class="muted">確認状況：${role.verified ? role.verificationLabel : 'MOD個別検証待ち'}</p><p>${source}</p>`; $('#role-dialog').showModal();
 }
 function setupQuiz() {
