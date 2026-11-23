@@ -1,0 +1,13 @@
+{
+  "name": "among-us-role-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "start": "vercel dev",
+    "build": "node -e \"console.log('Static site ready')\""
+  },
+  "devDependencies": {
+    "vercel": "latest"
+  }
+}
