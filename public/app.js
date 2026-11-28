@@ -56,9 +56,10 @@ const detailQuestions = [
 ];
 
 async function load() {
-  const [csv, verified, verifiedMods, registry] = await Promise.all([fetch('/data/roles-source.csv').then(r => r.text()), fetch('/data/vanilla-verified.json').then(r => r.json()), fetch('/data/mod-verified.json?v=20261123-tohk').then(r => r.json()), fetch('/data/mod-registry.json').then(r => r.json())]);
+  const [csv, verified, verifiedMods, registry] = await Promise.all([fetch('/data/roles-source.csv').then(r => r.text()), fetch('/data/vanilla-verified.json').then(r => r.json()), fetch('/data/mod-verified.json?v=20261128-nos').then(r => r.json()), fetch('/data/mod-registry.json').then(r => r.json())]);
   state.registry = registry; const verifiedMap = new Map(verified.map(role => [role.name, role])); const verifiedModMap = new Map(verifiedMods.map(role => [`${role.mod}:${role.name}`, role]));
-  state.roles = parseCsv(csv).map(raw => {
+  const excludedSnr = new Set(['SNR_Spy', 'SNR_ClinicalLaboratoryTechnician', 'SNR_RemoteSheriff']);
+  state.roles = parseCsv(csv).filter(raw => (raw.mod !== 'SNR' || !excludedSnr.has(raw.name)) && !(raw.mod === 'NOS' && raw.name === 'NOS_MetaRole')).map(raw => {
     const official = verifiedMap.get(raw.name);
     const modRecord = verifiedModMap.get(`${raw.mod}:${raw.name}`);
     if (official) return {...official, mod:'Vanilla', verified:true, verificationLabel:'公式確認済み', raw};
